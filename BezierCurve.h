@@ -3,6 +3,8 @@
 // Vector típus a szokåsos mŹveletekkel
 #include "vector.hh"
 #include <algorithm>
+#include "GaussQuadrature/gauss_legendre.h"
+#include <math.h>
 
 using Point = Vector;
 using PointVector = std::vector<Point>;
@@ -17,6 +19,7 @@ struct BezierCurve
 	PointVector cp;		            // kontrollpontok
 	std::vector<int> coefficients;
 	PointVector derivatedCp;
+	PointVector secondDerivatedCp;
 
 	Point getFunctionValue(double t);
 	void init(int g);
@@ -40,4 +43,11 @@ struct BezierCurve
 	double arcLengthByFractions() const;
 	double arcLengthByNumericalIntegral();
 	double vectorLength(Vector v) const;
+	double static derivatedValueLength(double x, void* data) ;
+	Point crossProduct(Point p1, Point p2);
+	void getSecondDerivateControlPoints(PointVector& secondDerivateCp);
+	Point getSecondDerivatedValue(double u);
+	double curvature(double u);
+	double static curveIntegralBaseFunction(double u, void* data);
+	double sumCurvature();
 };

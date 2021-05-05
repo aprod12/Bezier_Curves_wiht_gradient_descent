@@ -55,6 +55,9 @@
     <ClCompile Include="BezierWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="GaussQuadrature\gauss_legendre.c">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="MyViewer.h">
@@ -95,6 +98,9 @@
   <ItemGroup>
     <ClInclude Include="BezierCurve.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GaussQuadrature\gauss_legendre.h">
+      <Filter>Generated Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

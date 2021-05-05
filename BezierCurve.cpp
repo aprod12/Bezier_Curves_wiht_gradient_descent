@@ -29,6 +29,7 @@ void BezierCurve::regenerateControlPoints()
 {
 	if (cp.size() <= n) {
 		derivatedCp.resize(n);
+		secondDerivatedCp.resize(n - 1);
 		cp.clear();
 		for (size_t i = 0; i < n + 1; i++)
 		{
@@ -140,6 +141,50 @@ void BezierCurve::getFristDerivateControlPoints(PointVector& derivateCp) {
 		derivateCp[i] =  cp[i + 1] - cp[i];
 	}
 }
+void BezierCurve::getSecondDerivateControlPoints(PointVector& secondDerivateCp) {
+	for (size_t i = 0; i < n - 1; i++)
+	{
+		secondDerivateCp[i] = derivatedCp[i + 1] - derivatedCp[i];
+	}
+}
+
+Point BezierCurve::getSecondDerivatedValue(double u) {
+	if (derivatedCp.size() == 0)
+		getFristDerivateControlPoints(derivatedCp);
+	getSecondDerivateControlPoints(secondDerivatedCp);
+	DoubleVector coeff;
+	bernsteinAll(n - 2, u, coeff);
+	Point p(0.0, 0.0, 0.0);
+	for (size_t k = 0; k <= n - 2; ++k)
+		p += secondDerivatedCp[k] * coeff[k] * n;
+	return p;
+}
+
+double BezierCurve::curvature(double u)
+{
+	double curve;
+	curve = vectorLength(crossProduct(getFirstDerivatedValue(u), getSecondDerivatedValue(u))) /
+		pow(vectorLength(getFirstDerivatedValue(u)), 3);
+	return curve;
+}
+
+double BezierCurve::curveIntegralBaseFunction(double u, void * data)
+{
+	BezierCurve* b = (BezierCurve*)data;
+	double result;
+	result = pow(b->curvature(u), 2) * b->vectorLength(b->getFirstDerivatedValue(u));
+	return result;
+}
+
+double BezierCurve::sumCurvature()
+{
+	double cur;
+	for (size_t i = 2; i < 128; i++)
+	{
+		cur = gauss_legendre(i, curveIntegralBaseFunction, this, 0, 1);
+	}
+	return cur;
+}
 
 //TODO: ide lehet kell majd az n *-resz de meg nem biztos!!!
 Point BezierCurve::getFirstDerivatedValue(double u) {
@@ -201,7 +246,7 @@ Point BezierCurve::derivativesByControlPoints(double u, size_t d, VectorVector &
 double BezierCurve::arcLengthByFractions() const
 {
 	float length = 0;
-	for (double i = 0.0; i <= 1.0; i += 0.01) {
+	for (double i = 0.0; i < 1.0; i += 0.01) {
 		Point p1 = evaluateByDeCasteljau(i);
 		Point p2 = evaluateByDeCasteljau(i + 0.01);
 		Vector tmp = p1 - p2;
@@ -211,11 +256,27 @@ double BezierCurve::arcLengthByFractions() const
 	return length;
 }
 
+double BezierCurve::derivatedValueLength(double x, void* data) {
+	BezierCurve* tmp = (BezierCurve*)data;
+	return tmp->vectorLength(tmp->getFirstDerivatedValue(x));
+}
+
+Point BezierCurve::crossProduct(Point p1, Point p2)
+{
+	Point result;
+	result.x = p1.y * p2.z - p1.z * p2.y;
+	result.y = p1.z * p2.x - p1.x * p2.z;
+	result.z = p1.x * p2.y - p1.y * p2.x;
+	return result;
+}
+
 double BezierCurve::arcLengthByNumericalIntegral()
 {
-	float length;
-	length = (vectorLength(getFirstDerivatedValue((1/2) * (1 / sqrt(3)) + (1 / 2)))
-		+ vectorLength(getFirstDerivatedValue((1 / 2) * (-1 / sqrt(3)) + (1 / 2)))) / 2;
+	double length;
+	for (size_t i = 2; i < 128; i++)
+	{
+		length = gauss_legendre(i, derivatedValueLength, this, 0, 1);
+	}
 	return length;
 }
 

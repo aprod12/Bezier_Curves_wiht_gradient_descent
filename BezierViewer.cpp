@@ -30,15 +30,13 @@ void BezierViewer::draw() {
 		Point p = curve.evaluateByDeCasteljau(i);
 		glVertex3f(p.x, p.y, p.z);
 	}
-	glEnd();
-	glColor3d(0.0, 0.0, 1.0);
-	glBegin(GL_LINE_STRIP);
-	for (double i = 0.0; i <= 1.01; i += 0.01) {
-		Point p = curve.getFirstDerivatedValue(i);
-		glVertex3f(p.x, p.y, p.z);
-	}
-	std::string tmp = "Arc length with fractions: " + std::to_string(curve.arcLengthByFractions()) + " | "
-		+ "Arc length with numerical integral: " + std::to_string(curve.arcLengthByNumericalIntegral());
+	sumCurve = curve.sumCurvature();
+	arcLengthByFractions = curve.arcLengthByFractions();
+	arcLenghtIntegral = curve.arcLengthByNumericalIntegral();
+	error = abs(arcLengthByFractions - arcLenghtIntegral);
+	std::string tmp = "Arc length by fractions: " + std::to_string(arcLengthByFractions) + " | " +
+		"Arc length by integral: "  + std::to_string(arcLenghtIntegral) + " | Error: " + 
+		std::to_string(error) + " | Curve sum: " + std::to_string(sumCurve) ;
 	displayMessage(QString::fromUtf8(tmp.c_str()));
 	glEnd();
 	if (axes.shown)
@@ -84,7 +82,7 @@ QString BezierViewer::helpString() const
 }
 
 void BezierViewer::init() {
-	curve.n = 2;
+	curve.n = 3;
 }
 
 void BezierViewer::drawAxes() const {

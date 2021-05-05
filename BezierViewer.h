@@ -42,5 +42,6 @@ private:
 		Vec position, grabbed_pos, original_pos;
 	} axes;
 	int selected_vertex;
+	double sumCurve, arcLengthByFractions, arcLenghtIntegral, error;
 };
 
