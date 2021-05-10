@@ -10,3 +10,4 @@ qrc_*
 Makefile
 .qglviewer.xml
 
+autodiff/
