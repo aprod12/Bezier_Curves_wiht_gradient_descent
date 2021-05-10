@@ -4,7 +4,10 @@
 #include "vector.hh"
 #include <algorithm>
 #include "GaussQuadrature/gauss_legendre.h"
-#include <math.h>
+#include <math.h> 
+#include "eigen-3.3.9/Eigen/Core"
+#include "autodiff/autodiff/forward.hpp"
+#include "autodiff/forward/eigen.hpp"
 
 using Point = Vector;
 using PointVector = std::vector<Point>;
@@ -50,4 +53,7 @@ struct BezierCurve
 	double curvature(double u);
 	double static curveIntegralBaseFunction(double u, void* data);
 	double sumCurvature();
+	Vector getGradientVector(int index);
+	void gradientDescend();
+	static autodiff::dual energyFunction(const autodiff::VectorXdual & x);
 };

@@ -1,4 +1,4 @@
-﻿Build started 2021. 05. 05. 13:24:56.
+﻿Build started 2021. 05. 10. 15:06:40.
      1>Project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "15.0".
      1>Target "_PrepareForReferenceResolution" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "ResolveReferences" depends on it):
@@ -211,7 +211,7 @@
        Task "MSBuild"
          Global Properties:
            QtInnerBuild=D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj
-           RandomFileName=0b5cfxqs.oqc
+           RandomFileName=0uv12wu2.sdy
      1>Project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (1) is building "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (1:2) on node 2 (Build target(s)).
    1:2>Building with tools version "15.0".
        Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
@@ -236,10 +236,10 @@
    1:2>Target "SetTelemetryEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.DesignTime.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "Build" depends on it):
        Using "SetEnv" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         VSTEL_SolutionSessionID={39436506-2C22-478C-9054-01EB4E750377}
+         VSTEL_SolutionSessionID={F01E20B8-2B51-44B6-950F-8ADE1717DC38}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=93885921
+         VSTEL_CurrentSolutionBuildID=531984234
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={258D3AE3-C043-3843-A1D9-53B251FEBBD7}
@@ -633,15 +633,9 @@
        Task "Message" skipped, due to false condition; ('$(QtDebug)' == 'true') was evaluated as ('false' == 'true').
    1:2>Done building target "QtMocOverrideCpp" in project "sample-framework.vcxproj".
    1:2>Target "QtMoc" in file "C:\work\QtMsBuild\moc\qtmoc.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtWorkPrepare" depends on it):
-       Building target "QtMoc" completely.
-       Input file "sample-framework.vcxproj" is newer than output file "Debug\moc_MyViewer.cpp".
-       Task "Message" skipped, due to false condition; ('$(QtDebug)' == 'true') was evaluated as ('false' == 'true').
-       Task "CreateProperty"
-       Done executing task "CreateProperty".
-       Task "Flatten"
-       Done executing task "Flatten".
-       Task "HostTranslatePaths"
-       Done executing task "HostTranslatePaths".
+       Skipping target "QtMoc" because all output files are up-to-date with respect to the input files.
+       Input files: D:\Egyetem\6.felev\Onlab\sample-framework-master\MyViewer.h;sample-framework.vcxproj
+       Output files: Debug\moc_MyViewer.cpp
    1:2>Done building target "QtMoc" in project "sample-framework.vcxproj".
    1:2>Target "QtMoc" in file "C:\work\QtMsBuild\moc\qtmoc.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtWorkPrepare" depends on it):
        Skipping target "QtMoc" because all output files are up-to-date with respect to the input files.
@@ -649,26 +643,14 @@
        Output files: Debug\moc_BezierViewer.cpp
    1:2>Done building target "QtMoc" in project "sample-framework.vcxproj".
    1:2>Target "QtMoc" in file "C:\work\QtMsBuild\moc\qtmoc.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtWorkPrepare" depends on it):
-       Building target "QtMoc" completely.
-       Input file "sample-framework.vcxproj" is newer than output file "Debug\moc_BezierWindow.cpp".
-       Task "Message" skipped, due to false condition; ('$(QtDebug)' == 'true') was evaluated as ('false' == 'true').
-       Task "CreateProperty"
-       Done executing task "CreateProperty".
-       Task "Flatten"
-       Done executing task "Flatten".
-       Task "HostTranslatePaths"
-       Done executing task "HostTranslatePaths".
+       Skipping target "QtMoc" because all output files are up-to-date with respect to the input files.
+       Input files: D:\Egyetem\6.felev\Onlab\sample-framework-master\BezierWindow.h;sample-framework.vcxproj
+       Output files: Debug\moc_BezierWindow.cpp
    1:2>Done building target "QtMoc" in project "sample-framework.vcxproj".
    1:2>Target "QtMoc" in file "C:\work\QtMsBuild\moc\qtmoc.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtWorkPrepare" depends on it):
-       Building target "QtMoc" completely.
-       Input file "sample-framework.vcxproj" is newer than output file "Debug\moc_MyWindow.cpp".
-       Task "Message" skipped, due to false condition; ('$(QtDebug)' == 'true') was evaluated as ('false' == 'true').
-       Task "CreateProperty"
-       Done executing task "CreateProperty".
-       Task "Flatten"
-       Done executing task "Flatten".
-       Task "HostTranslatePaths"
-       Done executing task "HostTranslatePaths".
+       Skipping target "QtMoc" because all output files are up-to-date with respect to the input files.
+       Input files: D:\Egyetem\6.felev\Onlab\sample-framework-master\MyWindow.h;sample-framework.vcxproj
+       Output files: Debug\moc_MyWindow.cpp
    1:2>Done building target "QtMoc" in project "sample-framework.vcxproj".
        Target "QtQmlCache" skipped. Previously built successfully.
    1:2>Target "QtWorkPrepare" in file "C:\work\QtMsBuild\qt_globals.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtWork" depends on it):
@@ -863,443 +845,76 @@
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYVIEWER.OBJ
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYWINDOW.OBJ
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MAIN.OBJ
-         BezierViewer.cpp will be compiled because D:\Egyetem\6.felev\Onlab\sample-framework-master\BezierViewer.cpp was modified at 2021. 05. 05. 12:15:32.
-         Outputs for D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERVIEWER.CPP:
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERVIEWER.OBJ
+         BezierCurve.cpp will be compiled because D:\Egyetem\6.felev\Onlab\sample-framework-master\BezierCurve.cpp was modified at 2021. 05. 10. 15:06:36.
+         BezierViewer.cpp will be compiled because D:\Egyetem\6.felev\Onlab\sample-framework-master\BezierViewer.cpp was modified at 2021. 05. 10. 15:01:09.
+         BezierWindow.cpp will be compiled because D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERCURVE.H was modified at 2021. 05. 10. 15:03:50.
+         main.cpp will be compiled because D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERCURVE.H was modified at 2021. 05. 10. 15:03:50.
+         No output for D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERCURVE.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERVIEWER.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERWINDOW.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\MAIN.CPP was found in the tracking log; source compilation required.
          Write Tracking Logs:
          	debug\sample-framework.tlog\CL.write.1.tlog
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1900
-         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /IDebug /ID:\Egyetem\Work\Tobbi_Onlab\OpenMesh8.1_src\src /I"D:\Egyetem\Work\Tobbi_Onlab\libQGLViewer-2.7.2" /I.\GeneratedFiles\Debug /I.\GeneratedFiles /I. /I/usr/include/eigen3 /Idebug /I/include /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtOpenGL /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtWidgets /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtGui /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtANGLE /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtXml /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtCore /I/include /I"C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\mkspecs\win32-msvc" /IDebug /Zi /nologo /W3 /WX- /diagnostics:classic /MP /Od /D _USE_MATH_DEFINES /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_OPENGL_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_XML_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++14 /Fo"debug\\" /Fd"debug\vc141.pdb" /Gd /TP /wd4577 /wd4467 /FC /errorReport:prompt -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 BezierViewer.cpp
+           VS_UNICODE_OUTPUT=1992
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /IDebug /I"D:\Egyetem\6.felev\Onlab\sample-framework-master\eigen-3.3.9" /I"D:\Egyetem\6.felev\Onlab\sample-framework-master\autodiff" /ID:\Egyetem\Work\Tobbi_Onlab\OpenMesh8.1_src\src /I"D:\Egyetem\Work\Tobbi_Onlab\libQGLViewer-2.7.2" /I.\GeneratedFiles\Debug /I.\GeneratedFiles /I. /I/usr/include/eigen3 /Idebug /I/include /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtOpenGL /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtWidgets /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtGui /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtANGLE /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtXml /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtCore /I/include /I"C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\mkspecs\win32-msvc" /IDebug /Zi /nologo /W3 /WX- /diagnostics:classic /MP /Od /D _USE_MATH_DEFINES /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_OPENGL_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_XML_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"debug\\" /Fd"debug\vc141.pdb" /Gd /TP /wd4577 /wd4467 /FC /errorReport:prompt -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 BezierCurve.cpp BezierViewer.cpp BezierWindow.cpp main.cpp
          Tracking command:
-         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\Egyetem\6.felev\Onlab\sample-framework-master\debug\sample-framework.tlog /r D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERVIEWER.CPP /b MSBuildConsole_CancelEvent4efe63332dff46608d6fc654c62de376  /c "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe"  /c /IDebug /ID:\Egyetem\Work\Tobbi_Onlab\OpenMesh8.1_src\src /I"D:\Egyetem\Work\Tobbi_Onlab\libQGLViewer-2.7.2" /I.\GeneratedFiles\Debug /I.\GeneratedFiles /I. /I/usr/include/eigen3 /Idebug /I/include /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtOpenGL /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtWidgets /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtGui /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtANGLE /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtXml /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtCore /I/include /I"C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\mkspecs\win32-msvc" /IDebug /Zi /nologo /W3 /WX- /diagnostics:classic /MP /Od /D _USE_MATH_DEFINES /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_OPENGL_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_XML_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++14 /Fo"debug\\" /Fd"debug\vc141.pdb" /Gd /TP /wd4577 /wd4467 /FC /errorReport:prompt -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 BezierViewer.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\Egyetem\6.felev\Onlab\sample-framework-master\debug\sample-framework.tlog /r "D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERCURVE.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERVIEWER.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERWINDOW.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\MAIN.CPP" /b MSBuildConsole_CancelEvent09c4828da6064c0582233a4766c7ffcb  /c "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe"  /c /IDebug /I"D:\Egyetem\6.felev\Onlab\sample-framework-master\eigen-3.3.9" /I"D:\Egyetem\6.felev\Onlab\sample-framework-master\autodiff" /ID:\Egyetem\Work\Tobbi_Onlab\OpenMesh8.1_src\src /I"D:\Egyetem\Work\Tobbi_Onlab\libQGLViewer-2.7.2" /I.\GeneratedFiles\Debug /I.\GeneratedFiles /I. /I/usr/include/eigen3 /Idebug /I/include /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtOpenGL /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtWidgets /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtGui /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtANGLE /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtXml /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtCore /I/include /I"C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\mkspecs\win32-msvc" /IDebug /Zi /nologo /W3 /WX- /diagnostics:classic /MP /Od /D _USE_MATH_DEFINES /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_OPENGL_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_XML_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"debug\\" /Fd"debug\vc141.pdb" /Gd /TP /wd4577 /wd4467 /FC /errorReport:prompt -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 BezierCurve.cpp BezierViewer.cpp BezierWindow.cpp main.cpp
+         BezierCurve.cpp
          BezierViewer.cpp
-   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\bezierviewer.cpp(105): warning C4267: 'argument': conversion from 'size_t' to 'GLuint', possible loss of data
-       Done executing task "CL".
-       Task "CL"
-         Read Tracking Logs:
-         	debug\sample-framework.tlog\CL.read.1.tlog
-         Outputs for D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\GAUSSQUADRATURE\GAUSS_LEGENDRE.C:
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\GAUSS_LEGENDRE.OBJ
-         All outputs are up-to-date.
-       Done executing task "CL".
-       Task "CL"
-         Using cached input dependency table built from:
-         	D:\Egyetem\6.felev\Onlab\sample-framework-master\debug\sample-framework.tlog\CL.read.1.tlog
-         Outputs for D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERVIEWER.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERWINDOW.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYVIEWER.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYWINDOW.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\QRC_SAMPLE-FRAMEWORK.CPP:
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\QRC_SAMPLE-FRAMEWORK.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYVIEWER.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERVIEWER.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERWINDOW.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYWINDOW.OBJ
-         All outputs are up-to-date.
-       Done executing task "CL".
-   1:2>Done building target "ClCompile" in project "sample-framework.vcxproj".
-       Target "RunSelectedFileNativeCodeAnalysis" skipped, due to false condition; ('$(RunCppAnalysis)'=='true' and '$(SelectedFiles)'!='') was evaluated as ('false'=='true' and ''!='').
-       Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('BezierCurve.cpp;BezierViewer.cpp;BezierWindow.cpp;GaussQuadrature\gauss_legendre.c;MyViewer.cpp;MyWindow.cpp;main.cpp;Debug\qrc_sample-framework.cpp;Debug\moc_MyViewer.cpp;Debug\moc_BezierViewer.cpp;Debug\moc_BezierWindow.cpp;Debug\moc_MyWindow.cpp' != '' and 'false' == 'True').
-   1:2>Target "AfterClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_ClCompile" depends on it):
-   1:2>Done building target "AfterClCompile" in project "sample-framework.vcxproj".
-   1:2>Target "_ClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_BuildCompileAction" depends on it):
-   1:2>Done building target "_ClCompile" in project "sample-framework.vcxproj".
-       Target "_ResGen" skipped, due to false condition; ('@(EmbeddedResource)'!='') was evaluated as (''!='').
-   1:2>Target "BeforeResourceCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_ResourceCompile" depends on it):
-   1:2>Done building target "BeforeResourceCompile" in project "sample-framework.vcxproj".
-   1:2>Target "MakeDirsForResourceCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_ResourceCompile" depends on it):
-       Task "MakeDir"
-       Done executing task "MakeDir".
-   1:2>Done building target "MakeDirsForResourceCompile" in project "sample-framework.vcxproj".
-       Target "ResourceCompile" skipped, due to false condition; ('@(ResourceCompile)' != '') was evaluated as ('' != '').
-   1:2>Target "AfterResourceCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_ResourceCompile" depends on it):
-   1:2>Done building target "AfterResourceCompile" in project "sample-framework.vcxproj".
-   1:2>Target "_ResourceCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_BuildCompileAction" depends on it):
-   1:2>Done building target "_ResourceCompile" in project "sample-framework.vcxproj".
-       Target "_ImpLib" skipped, due to false condition; ('$(ImpLibCompiled)' == 'true') was evaluated as ('' == 'true').
-       Target "_Lib" skipped, due to false condition; ('$(LibCompiled)' == 'true') was evaluated as ('' == 'true').
-   1:2>Target "AfterBuildCompileEvent" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_BuildCompileAction" depends on it):
-   1:2>Done building target "AfterBuildCompileEvent" in project "sample-framework.vcxproj".
-   1:2>Target "_BuildCompileAction" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "BuildCompile" depends on it):
-   1:2>Done building target "_BuildCompileAction" in project "sample-framework.vcxproj".
-   1:2>Target "BuildCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "Build" depends on it):
-   1:2>Done building target "BuildCompile" in project "sample-framework.vcxproj".
-       Target "PrepareProjectReferences" skipped. Previously built successfully.
-   1:2>Target "BuildLinkTraverse" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "BuildLink" depends on it):
-       Task "MSBuild" skipped, due to false condition; ('$(BuildPassReferences)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != ''  and '%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true') was evaluated as ('' == 'true' and '' != '' and '' != ''  and '' == 'true').
-   1:2>Done building target "BuildLinkTraverse" in project "sample-framework.vcxproj".
-       Target "PrepareForBuild" skipped. Previously built successfully.
-       Target "ResolveReferences" skipped. Previously built successfully.
-   1:2>Target "ComputeLegacyManifestEmbedding" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_BuildLinkAction" depends on it):
-       Task "VCMessage" skipped, due to false condition; ('$(RevertManifestEmbedding)' == 'true' and '$(_LegacyManifestEmbeddingDebug)' == 'true') was evaluated as ('' == 'true' and '' == 'true').
-   1:2>Done building target "ComputeLegacyManifestEmbedding" in project "sample-framework.vcxproj".
-   1:2>Target "BeforeLink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_Link" depends on it):
-   1:2>Done building target "BeforeLink" in project "sample-framework.vcxproj".
-   1:2>Target "ComputeRCOutputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "ComputeRCGeneratedLinkInputs" depends on it):
-   1:2>Done building target "ComputeRCOutputs" in project "sample-framework.vcxproj".
-   1:2>Target "ComputeRCGeneratedLinkInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_Link" depends on it):
-   1:2>Done building target "ComputeRCGeneratedLinkInputs" in project "sample-framework.vcxproj".
-   1:2>Target "ComputeManifestGeneratedLinkerInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_Link" depends on it):
-   1:2>Done building target "ComputeManifestGeneratedLinkerInputs" in project "sample-framework.vcxproj".
-       Target "ComputeCustomBuildOutput" skipped. Previously built successfully.
-       Target "ComputeMIDLGeneratedCompileInputs" skipped. Previously built successfully.
-       Target "ComputeCLInputPDBName" skipped. Previously built successfully.
-       Target "ComputeReferenceCLInput" skipped. Previously built successfully.
-       Target "WarnCompileDuplicatedFilename" skipped. Previously built successfully.
-       Target "FixupCLCompileOptions" skipped. Previously built successfully.
-       Target "Qt" skipped. Previously built successfully.
-   1:2>Target "ComputeCLOutputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "ComputeCLGeneratedLinkInputs" depends on it):
-   1:2>Done building target "ComputeCLOutputs" in project "sample-framework.vcxproj".
-   1:2>Target "ComputeCLGeneratedLinkInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_Link" depends on it):
-   1:2>Done building target "ComputeCLGeneratedLinkInputs" in project "sample-framework.vcxproj".
-   1:2>Target "ComputeLinkInputsFromProject" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_Link" depends on it):
-   1:2>Done building target "ComputeLinkInputsFromProject" in project "sample-framework.vcxproj".
-       Target "ComputeReferenceLinkInputs" skipped, due to false condition; (@(ProjectReference) != '') was evaluated as ( != '').
-       Target "Qt" skipped. Previously built successfully.
-       Target "ComputeCLOutputs" skipped. Previously built successfully.
-   1:2>Target "QtRccPass2_GetObjs" in file "C:\work\QtMsBuild\rcc\qtrcc.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtRccPass2" depends on it):
-   1:2>Done building target "QtRccPass2_GetObjs" in project "sample-framework.vcxproj".
-       Target "QtRccPass2_Exec" skipped, due to false condition; ('@(QtRccObj)' != '') was evaluated as ('' != '').
-   1:2>Target "QtRccPass2" in file "C:\work\QtMsBuild\rcc\qtrcc.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtRccPass2_Link" depends on it):
-   1:2>Done building target "QtRccPass2" in project "sample-framework.vcxproj".
-   1:2>Target "QtRccPass2_Link" in file "C:\work\QtMsBuild\rcc\qtrcc.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_Link" depends on it):
-   1:2>Done building target "QtRccPass2_Link" in project "sample-framework.vcxproj".
-   1:2>Target "ComputeManifestInputsTargets" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_Link" depends on it):
-   1:2>Done building target "ComputeManifestInputsTargets" in project "sample-framework.vcxproj".
-       Target "ManifestResourceCompile" skipped, due to false condition; ('$(EmbedManifestBy)' == 'LINK' and '@(Manifest)' != '') was evaluated as ('MT' == 'LINK' and '' != '').
-       Target "AssignWinFXEmbeddedResource" skipped, due to false condition; ('@(WinFXEmbeddedResource)' != '') was evaluated as ('' != '').
-   1:2>Target "AssignTargetPaths" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "PrepareResourceNames" depends on it):
-       Using "AssignTargetPath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "AssignTargetPath"
-       Done executing task "AssignTargetPath".
-       Task "AssignTargetPath"
-       Done executing task "AssignTargetPath".
-       Task "AssignTargetPath"
-       Done executing task "AssignTargetPath".
-       Task "AssignTargetPath"
-       Done executing task "AssignTargetPath".
-       Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and '.png'=='.manifest').
-   1:2>Done building target "AssignTargetPaths" in project "sample-framework.vcxproj".
-       Target "AssignTargetPaths" skipped. Previously built successfully.
-   1:2>Target "SplitResourcesByCulture" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "PrepareResourceNames" depends on it):
-       Task "Warning" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
-       Task "Warning" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
-       Task "Warning" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
-       Task "Warning" skipped, due to false condition; ('@(NonResxWithNoCulture)'!='') was evaluated as (''!='').
-       Using "AssignCulture" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "AssignCulture"
-       Done executing task "AssignCulture".
-   1:2>Done building target "SplitResourcesByCulture" in project "sample-framework.vcxproj".
-       Target "CreateManifestResourceNames" skipped, due to false condition; ('@(EmbeddedResource)' != '') was evaluated as ('' != '').
-   1:2>Target "CreateCustomManifestResourceNames" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "PrepareResourceNames" depends on it):
-   1:2>Done building target "CreateCustomManifestResourceNames" in project "sample-framework.vcxproj".
-   1:2>Target "PrepareResourceNames" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_Link" depends on it):
-   1:2>Done building target "PrepareResourceNames" in project "sample-framework.vcxproj".
-   1:2>Target "MakeDirsForLink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_Link" depends on it):
-       Task "MakeDir"
-       Done executing task "MakeDir".
-   1:2>Done building target "MakeDirsForLink" in project "sample-framework.vcxproj".
-   1:2>Target "DoLinkOutputFilesMatch" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_Link" depends on it):
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' == '') was evaluated as ('debug\\sample-framework.exe' == '').
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.FullPath)' != '$([System.IO.Path]::GetFullPath($(TargetPath)))') was evaluated as ('debug\\sample-framework.exe' != '' and 'D:\Egyetem\6.felev\Onlab\sample-framework-master\debug\sample-framework.exe' != 'D:\Egyetem\6.felev\Onlab\sample-framework-master\debug\sample-framework.exe').
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Extension)' != '' and '%(_OutputFileFromLink.Extension)' != '$(TargetExt)') was evaluated as ('debug\\sample-framework.exe' != '' and '.exe' != '' and '.exe' != '.exe').
-       Task "VCMessage" skipped, due to false condition; ('@(_OutputFileFromLink)' != '' and '%(_OutputFileFromLink.Filename)' != '' and '%(_OutputFileFromLink.Filename)' != '$(TargetName)') was evaluated as ('debug\\sample-framework.exe' != '' and 'sample-framework' != '' and 'sample-framework' != 'sample-framework').
-       Task "VCMessage" skipped, due to false condition; ('%(Link.MinimumRequiredVersion)' != '' and ('%(Link.Subsystem)' == '' or '%(Link.Subsystem)' == 'NotSet')) was evaluated as ('' != '' and ('Windows' == '' or 'Windows' == 'NotSet')).
-   1:2>Done building target "DoLinkOutputFilesMatch" in project "sample-framework.vcxproj".
-   1:2>Target "PreLinkEvent" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_Link" depends on it):
-       Task "Message" skipped, due to false condition; ('%(PreLinkEvent.Message)' != '' and '%(PreLinkEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
-       Task "Exec" skipped, due to false condition; ('%(PreLinkEvent.Command)' != '') was evaluated as ('' != '').
-   1:2>Done building target "PreLinkEvent" in project "sample-framework.vcxproj".
-   1:2>Target "ComputeLinkSwitches" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "Link" depends on it):
-   1:2>Done building target "ComputeLinkSwitches" in project "sample-framework.vcxproj".
-   1:2>Target "Link" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_Link" depends on it):
-       Using "Link" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Build.CppTasks.Common.dll".
-       Task "Link"
-         Write Tracking Logs:
-         	debug\sample-framework.tlog\link.write.1.tlog
-         Read Tracking Logs:
-         	debug\sample-framework.tlog\link.read.1.tlog
-         Outputs for D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERCURVE.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\GAUSS_LEGENDRE.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MAIN.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\QRC_SAMPLE-FRAMEWORK.OBJ:
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\SAMPLE-FRAMEWORK.EXE
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\SAMPLE-FRAMEWORK.ILK
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\SAMPLE-FRAMEWORK.PDB
-         Inputs for D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERCURVE.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\GAUSS_LEGENDRE.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MAIN.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\QRC_SAMPLE-FRAMEWORK.OBJ:
-         	D:\EGYETEM\WORK\TOBBI_ONLAB\OPENMESH8.1_X64_DLL\OPENMESH 8.1\LIB\OPENMESHCORED.LIB
-         	D:\EGYETEM\WORK\TOBBI_ONLAB\LIBQGLVIEWER-2.7.2\QGLVIEWER\QGLVIEWERD2.LIB
-         	D:\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X64\OPENGL32.LIB
-         	D:\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X64\GLU32.LIB
-         	C:\QT\QT5.12.10\5.12.10\MSVC2017_64\LIB\QT5OPENGLD.LIB
-         	C:\QT\QT5.12.10\5.12.10\MSVC2017_64\LIB\QT5WIDGETSD.LIB
-         	C:\QT\QT5.12.10\5.12.10\MSVC2017_64\LIB\QT5GUID.LIB
-         	C:\QT\QT5.12.10\5.12.10\MSVC2017_64\LIB\QT5XMLD.LIB
-         	C:\QT\QT5.12.10\5.12.10\MSVC2017_64\LIB\QT5CORED.LIB
-         	C:\QT\QT5.12.10\5.12.10\MSVC2017_64\LIB\QTMAIND.LIB
-         	D:\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X64\SHELL32.LIB
-         	D:\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X64\KERNEL32.LIB
-         	D:\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X64\USER32.LIB
-         	D:\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X64\GDI32.LIB
-         	D:\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X64\WINSPOOL.LIB
-         	D:\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X64\COMDLG32.LIB
-         	D:\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X64\ADVAPI32.LIB
-         	D:\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X64\OLE32.LIB
-         	D:\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X64\OLEAUT32.LIB
-         	D:\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X64\UUID.LIB
-         	D:\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X64\ODBC32.LIB
-         	D:\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X64\ODBCCP32.LIB
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERCURVE.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERVIEWER.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERWINDOW.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\GAUSS_LEGENDRE.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYVIEWER.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYWINDOW.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MAIN.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\QRC_SAMPLE-FRAMEWORK.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYVIEWER.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERVIEWER.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERWINDOW.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYWINDOW.OBJ
-         	C:\WINDOWS\SYSTEM32\TZRES.DLL
-         	C:\WINDOWS\GLOBALIZATION\SORTING\SORTDEFAULT.NLS
-         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\COMMUNITY\VC\TOOLS\MSVC\14.16.27023\LIB\X64\MSVCPRTD.LIB
-         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\COMMUNITY\VC\TOOLS\MSVC\14.16.27023\LIB\X64\MSVCRTD.LIB
-         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\COMMUNITY\VC\TOOLS\MSVC\14.16.27023\LIB\X64\OLDNAMES.LIB
-         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\COMMUNITY\VC\TOOLS\MSVC\14.16.27023\LIB\X64\VCRUNTIMED.LIB
-         	D:\WINDOWS KITS\10\LIB\10.0.18362.0\UCRT\X64\UCRTD.LIB
-         Source compilation required: input D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERVIEWER.OBJ is newer than output D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\SAMPLE-FRAMEWORK.PDB.
-         Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1880
-         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\sample-framework.exe" /NOLOGO /LIBPATH:"D:\Egyetem\Work\Tobbi_Onlab\libQGLViewer-2.7.2\QGLViewer" /LIBPATH:"D:\Egyetem\Work\Tobbi_Onlab\OpenMesh8.1_x64_dll\OpenMesh 8.1\lib" /LIBPATH:\usr\lib\OpenMesh /LIBPATH:C:\openssl\lib /LIBPATH:"C:\Utils\my_sql\mysql-5.6.11-winx64\lib" /LIBPATH:C:\Utils\postgresql\pgsql\lib /LIBPATH:C:\openssl\lib /LIBPATH:"C:\Utils\my_sql\mysql-5.6.11-winx64\lib" /LIBPATH:C:\Utils\postgresql\pgsql\lib OpenMeshCored.lib QGLViewerd2.lib opengl32.lib glu32.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5OpenGLd.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Widgetsd.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Guid.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Xmld.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Cored.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\qtmaind.lib shell32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\sample-framework.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" debug\BezierCurve.obj
-         debug\BezierViewer.obj
-         debug\BezierWindow.obj
-         debug\gauss_legendre.obj
-         debug\MyViewer.obj
-         debug\MyWindow.obj
-         debug\main.obj
-         "debug\qrc_sample-framework.obj"
-         debug\moc_MyViewer.obj
-         debug\moc_BezierViewer.obj
-         debug\moc_BezierWindow.obj
-         debug\moc_MyWindow.obj
-         Tracking command:
-         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\Egyetem\6.felev\Onlab\sample-framework-master\debug\sample-framework.tlog /r "D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERCURVE.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\GAUSS_LEGENDRE.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MAIN.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\QRC_SAMPLE-FRAMEWORK.OBJ" /b MSBuildConsole_CancelEvente02da26876464db0bdaa0312fbed6a9f  /c "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"debug\\sample-framework.exe" /NOLOGO /LIBPATH:"D:\Egyetem\Work\Tobbi_Onlab\libQGLViewer-2.7.2\QGLViewer" /LIBPATH:"D:\Egyetem\Work\Tobbi_Onlab\OpenMesh8.1_x64_dll\OpenMesh 8.1\lib" /LIBPATH:\usr\lib\OpenMesh /LIBPATH:C:\openssl\lib /LIBPATH:"C:\Utils\my_sql\mysql-5.6.11-winx64\lib" /LIBPATH:C:\Utils\postgresql\pgsql\lib /LIBPATH:C:\openssl\lib /LIBPATH:"C:\Utils\my_sql\mysql-5.6.11-winx64\lib" /LIBPATH:C:\Utils\postgresql\pgsql\lib OpenMeshCored.lib QGLViewerd2.lib opengl32.lib glu32.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5OpenGLd.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Widgetsd.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Guid.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Xmld.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Cored.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\qtmaind.lib shell32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\sample-framework.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" debug\BezierCurve.obj
-         debug\BezierViewer.obj
-         debug\BezierWindow.obj
-         debug\gauss_legendre.obj
-         debug\MyViewer.obj
-         debug\MyWindow.obj
-         debug\main.obj
-         "debug\qrc_sample-framework.obj"
-         debug\moc_MyViewer.obj
-         debug\moc_BezierViewer.obj
-         debug\moc_BezierWindow.obj
-         debug\moc_MyWindow.obj
-       Done executing task "Link".
-       Task "Message"
-         sample-framework.vcxproj -> D:\Egyetem\6.felev\Onlab\sample-framework-master\debug\sample-framework.exe
-       Done executing task "Message".
-       Task "VCMessage" skipped, due to false condition; (('$(EmbedManifestBy)' != 'LINK' or '$(LegacyManifestEmbedding)' != 'true' or '$(LinkSkippedExecution)' == 'true') and
-                    %(Link.GenerateDebugInformation) == 'DebugFastLink' and %(Link.ProgramDataBaseFileName) != '') was evaluated as (('MT' != 'LINK' or '' != 'true' or 'False' == 'true') and
-                    true == 'DebugFastLink' and  != '').
-       Task "VCMessage" skipped, due to false condition; (('$(EmbedManifestBy)' != 'LINK' or '$(LegacyManifestEmbedding)' != 'true' or '$(LinkSkippedExecution)' == 'true') and
-                    %(Link.GenerateDebugInformation) == 'true' and %(Link.ProgramDataBaseFileName) != '') was evaluated as (('MT' != 'LINK' or '' != 'true' or 'False' == 'true') and
-                    true == 'true' and  != '').
-   1:2>Done building target "Link" in project "sample-framework.vcxproj".
-       Target "MetaGenInputsOutputs" skipped, due to false condition; ('$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('false' == 'True').
-       Target "ComputeMetaGenInputs" skipped, due to false condition; ('$(CLRSupport)'!='' and '$(CLRSupport)'!='false') was evaluated as ('false'!='' and 'false'!='false').
-       Target "MetaGen" skipped, due to false condition; ('@(MetaGen)' != '') was evaluated as ('' != '').
-       Target "QtDeploy" skipped, due to false condition; ('$(QtDeploy)' == 'true' AND '$(ApplicationType)' != 'Linux') was evaluated as ('false' == 'true' AND '' != 'Linux').
-   1:2>Target "ComputeLinkImportLibraryOutputsForClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_Link" depends on it):
-       Task "WriteLinesToFile" skipped, due to false condition; ('@(_LinkSecondaryOutput)' != '') was evaluated as ('' != '').
-   1:2>Done building target "ComputeLinkImportLibraryOutputsForClean" in project "sample-framework.vcxproj".
-   1:2>Target "AfterLink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_Link" depends on it):
-   1:2>Done building target "AfterLink" in project "sample-framework.vcxproj".
-   1:2>Target "_Link" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_BuildLinkAction" depends on it):
-   1:2>Done building target "_Link" in project "sample-framework.vcxproj".
-   1:2>Target "_ALink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_BuildLinkAction" depends on it):
-   1:2>Done building target "_ALink" in project "sample-framework.vcxproj".
-       Target "ComputeLegacyManifestEmbedding" skipped. Previously built successfully.
-   1:2>Target "_Manifest" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_BuildLinkAction" depends on it):
-       Task "CallTarget" skipped, due to false condition; ('$(LegacyManifestEmbedding)' == 'true') was evaluated as ('' == 'true').
-   1:2>Done building target "_Manifest" in project "sample-framework.vcxproj".
-   1:2>Target "RegisterOutput" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_BuildLinkAction" depends on it):
-       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'!='true').
-       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='DynamicLibrary' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='DynamicLibrary' and 'false'=='true' and 'false'=='true').
-       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'!='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'!='true').
-       Task "Exec" skipped, due to false condition; ('$(ConfigurationType)'=='Application' and '%(Link.RegisterOutput)'=='true' and '%(Link.PerUserRedirection)'=='true') was evaluated as ('Application'=='Application' and 'false'=='true' and 'false'=='true').
-       Task "VCMessage" skipped, due to false condition; ('$(_RegisterOutputExitCode)' != '' and '$(_RegisterOutputExitCode)' != '0') was evaluated as ('' != '' and '' != '0').
-   1:2>Done building target "RegisterOutput" in project "sample-framework.vcxproj".
-       Target "PrepareForBuild" skipped. Previously built successfully.
-       Target "ResolveReferences" skipped. Previously built successfully.
-   1:2>Target "ResolvedXDCMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_XdcMake" depends on it):
-       Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.Extension)' == '.vcxproj' and '@(ProjectReferenceWithConfiguration)' != '' and '@(_MSBuildProjectReferenceExistent)' != '' and '$(_ClCompileGenerateXMLDocumentationFiles)' == 'true') was evaluated as ('' == '.vcxproj' and '' != '' and '' != '' and '' == 'true').
-   1:2>Done building target "ResolvedXDCMake" in project "sample-framework.vcxproj".
-   1:2>Target "ComputeCLCompileGeneratedXDCFiles" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_XdcMake" depends on it):
-   1:2>Done building target "ComputeCLCompileGeneratedXDCFiles" in project "sample-framework.vcxproj".
-   1:2>Target "MakeDirsForXdcMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_XdcMake" depends on it):
-       Task "MakeDir"
-       Done executing task "MakeDir".
-   1:2>Done building target "MakeDirsForXdcMake" in project "sample-framework.vcxproj".
-       Target "XdcMake" skipped, due to false condition; ('@(XdcMake)' != '') was evaluated as ('' != '').
-   1:2>Target "_XdcMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_BuildLinkAction" depends on it):
-   1:2>Done building target "_XdcMake" in project "sample-framework.vcxproj".
-   1:2>Target "ComputeCLCompileGeneratedSbrFiles" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_BscMake" depends on it):
-   1:2>Done building target "ComputeCLCompileGeneratedSbrFiles" in project "sample-framework.vcxproj".
-   1:2>Target "MakeDirsForBscMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_BscMake" depends on it):
-       Task "MakeDir"
-       Done executing task "MakeDir".
-   1:2>Done building target "MakeDirsForBscMake" in project "sample-framework.vcxproj".
-       Target "BscMake" skipped, due to false condition; ('@(BscMake)' != '') was evaluated as ('' != '').
-       Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
-   1:2>Target "_BscMake" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_BuildLinkAction" depends on it):
-   1:2>Done building target "_BscMake" in project "sample-framework.vcxproj".
-   1:2>Target "_GenerateSatelliteAssemblyInputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "CreateSatelliteAssemblies" depends on it):
-       Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
-       Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
-   1:2>Done building target "_GenerateSatelliteAssemblyInputs" in project "sample-framework.vcxproj".
-       Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
-       Target "GenerateSatelliteAssemblies" skipped, due to false condition; ('@(_SatelliteAssemblyResourceInputs)' != '') was evaluated as ('' != '').
-   1:2>Target "CreateSatelliteAssemblies" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_BuildLinkAction" depends on it):
-   1:2>Done building target "CreateSatelliteAssemblies" in project "sample-framework.vcxproj".
-   1:2>Target "_Appverifier" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_BuildLinkAction" depends on it):
-   1:2>Done building target "_Appverifier" in project "sample-framework.vcxproj".
-   1:2>Target "_Deploy" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_BuildLinkAction" depends on it):
-   1:2>Done building target "_Deploy" in project "sample-framework.vcxproj".
-       Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(ReferenceSatellitePaths->'%(DestinationSubDirectory)') != '') was evaluated as ( != '').
-       Target "_CopyFilesMarkedCopyLocal" skipped, due to false condition; ('@(ReferenceCopyLocalPaths)' != '') was evaluated as ('' != '').
-       Target "AssignTargetPaths" skipped. Previously built successfully.
-       Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
-       Target "_GetProjectReferenceTargetFrameworkProperties" skipped. Previously built successfully.
-   1:2>Target "GetCopyToOutputDirectoryXamlAppDefs" in file "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Xaml.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "GetCopyToOutputDirectoryItems" depends on it):
-       Task "AssignTargetPath"
-       Done executing task "AssignTargetPath".
-   1:2>Done building target "GetCopyToOutputDirectoryXamlAppDefs" in project "sample-framework.vcxproj".
-   1:2>Target "GetCopyToOutputDirectoryItems" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_CopySourceItemsToOutputDirectory" depends on it):
-       Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false' and '$(UseCommonOutputDirectory)' != 'true') was evaluated as ('' != '' and 'true' == 'true' and '' != 'false' and 'false' != 'true').
-       Task "AssignTargetPath"
-       Done executing task "AssignTargetPath".
-   1:2>Done building target "GetCopyToOutputDirectoryItems" in project "sample-framework.vcxproj".
-       Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
-       Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
-   1:2>Target "_CopySourceItemsToOutputDirectory" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
-   1:2>Done building target "_CopySourceItemsToOutputDirectory" in project "sample-framework.vcxproj".
-       Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
-       Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
-   1:2>Target "_CheckForCompileOutputs" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "CopyFilesToOutputDirectory" depends on it):
-   1:2>Done building target "_CheckForCompileOutputs" in project "sample-framework.vcxproj".
-       Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
-   1:2>Target "CopyFilesToOutputDirectory" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "PrepareForRun" depends on it):
-       Task "Copy" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)' != 'true') was evaluated as ('true' == 'true' and 'true' != 'true').
-       Task "CopyRefAssembly" skipped, due to false condition; ('$(ProduceReferenceAssembly)' == 'true' and '$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)' != 'true') was evaluated as ('false' == 'true' and 'true' == 'true' and 'true' != 'true').
-       Task "Message" skipped, due to false condition; ('$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)'!='true') was evaluated as ('true' == 'true' and 'true'!='true').
-       Task "Copy" skipped, due to false condition; ('@(AddModules)' != '') was evaluated as ('' != '').
-       Task "Copy" skipped, due to false condition; ('$(_SGenDllCreated)'=='true') was evaluated as ('false'=='true').
-       Using "Copy" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "Copy"
-         Did not copy from file "debug\sample-framework.pdb" to file "debug\sample-framework.pdb" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
-       Done executing task "Copy".
-       Task "Copy" skipped, due to false condition; ('$(_DocumentationFileProduced)'=='true') was evaluated as ('false'=='true').
-       Task "Copy" skipped, due to false condition; ('@(IntermediateSatelliteAssembliesWithTargetPath)' != '') was evaluated as ('' != '').
-       Task "Copy" skipped, due to false condition; ('@(ReferenceComWrappersToCopyLocal)' != '' or '@(ResolvedIsolatedComModules)' != '' or '@(_DeploymentLooseManifestFile)' != '' or '@(NativeReferenceFile)' != '' ) was evaluated as ('' != '' or '' != '' or '' != '' or '' != '' ).
-       Task "Copy" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != '') was evaluated as ('' != 'true' and '' != '').
-       Task "Message" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != '') was evaluated as ('' != 'true' and '' != '').
-   1:2>Done building target "CopyFilesToOutputDirectory" in project "sample-framework.vcxproj".
-   1:2>Target "PrepareForRun" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_BuildLinkAction" depends on it):
-   1:2>Done building target "PrepareForRun" in project "sample-framework.vcxproj".
-       Target "CustomBuildStep" skipped, due to false condition; ('@(CustomBuildStep)' != '' and '$(SelectedFiles)'=='') was evaluated as ('' != '' and ''=='').
-   1:2>Target "PostBuildEvent" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_BuildLinkAction" depends on it):
-       Task "Message" skipped, due to false condition; ('%(PostBuildEvent.Message)' != '' and '%(PostBuildEvent.Command)' != '') was evaluated as ('' != '' and '' != '').
-       Task "Exec" skipped, due to false condition; ('%(PostBuildEvent.Command)' != '') was evaluated as ('' != '').
-   1:2>Done building target "PostBuildEvent" in project "sample-framework.vcxproj".
-   1:2>Target "_BuildLinkAction" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "BuildLink" depends on it):
-   1:2>Done building target "_BuildLinkAction" in project "sample-framework.vcxproj".
-   1:2>Target "BuildLink" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "Build" depends on it):
-   1:2>Done building target "BuildLink" in project "sample-framework.vcxproj".
-   1:2>Target "AfterBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.BuildSteps.Targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "Build" depends on it):
-   1:2>Done building target "AfterBuild" in project "sample-framework.vcxproj".
-   1:2>Target "QtEnterCriticalSection_FinalizeBuildStatus" in file "C:\work\QtMsBuild\qt_globals.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "Build" depends on it):
+         BezierWindow.cpp
+         main.cpp
+   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(8): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(9): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(48): warning C4189: 'z': local variable is initialized but not referenced
+   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(134): warning C4244: 'argument': conversion from 'size_t' to 'double', possible loss of data
+   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(159): warning C4244: 'argument': conversion from 'size_t' to 'double', possible loss of data
+   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(184): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(190): warning C4018: '<': signed/unsigned mismatch
+   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(208): error C2039: 'gradient': is not a member of 'autodiff'
+         d:\egyetem\6.felev\onlab\sample-framework-master\autodiff\autodiff\forward\eigen.hpp(342): note: see declaration of 'autodiff'
+   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(209): error C2039: 'at': is not a member of 'autodiff'
+         d:\egyetem\6.felev\onlab\sample-framework-master\autodiff\autodiff\forward\eigen.hpp(342): note: see declaration of 'autodiff'
+   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(224): warning C4244: 'argument': conversion from 'size_t' to 'double', possible loss of data
+   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(281): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(306): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\bezierviewer.cpp(111): warning C4267: 'argument': conversion from 'size_t' to 'GLuint', possible loss of data
+   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\bezierwindow.cpp(41): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+         The command exited with code 2.
+       Done executing task "CL" -- FAILED.
+   1:2>Done building target "ClCompile" in project "sample-framework.vcxproj" -- FAILED.
+   1:2>Done Building Project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (Build target(s)) -- FAILED.
+     1>Done executing task "MSBuild" -- FAILED.
+     1>Done building target "QtOuterBuild" in project "sample-framework.vcxproj" -- FAILED.
+     1>Target "QtLeaveCriticalSection_OnError" in file "C:\work\QtMsBuild\qt_globals.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtOuterBuild" depends on it):
        Task "CriticalSection"
        Done executing task "CriticalSection".
-   1:2>Done building target "QtEnterCriticalSection_FinalizeBuildStatus" in project "sample-framework.vcxproj".
-   1:2>Target "FinalizeBuildStatus" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "Build" depends on it):
-       Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "Delete"
-         Deleting file "debug\sample-framework.tlog\unsuccessfulbuild".
-       Done executing task "Delete".
-       Task "Touch"
-         Touching "debug\sample-framework.tlog\sample-framework.lastbuildstate".
-       Done executing task "Touch".
-   1:2>Done building target "FinalizeBuildStatus" in project "sample-framework.vcxproj".
-   1:2>Target "QtLeaveCriticalSection_FinalizeBuildStatus" in file "C:\work\QtMsBuild\qt_globals.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "Build" depends on it):
-       Task "CriticalSection"
-       Done executing task "CriticalSection".
-   1:2>Done building target "QtLeaveCriticalSection_FinalizeBuildStatus" in project "sample-framework.vcxproj".
-       Target "Qt" skipped. Previously built successfully.
-   1:2>Target "QtTranslationPrepare" in file "C:\work\QtMsBuild\translation\qttranslation.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtTranslationSelect" depends on it):
-   1:2>Done building target "QtTranslationPrepare" in project "sample-framework.vcxproj".
-   1:2>Target "QtTranslationSelect" in file "C:\work\QtMsBuild\translation\qttranslation.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtTranslation" depends on it):
-       Task "Delete" skipped, due to false condition; ('%(QtTranslationUpdate.Force)' == 'true') was evaluated as ('' == 'true').
-       Task "Delete" skipped, due to false condition; ('%(QtTranslationRelease.Force)' == 'true') was evaluated as ('' == 'true').
-       Task "Message" skipped, due to false condition; ('$(SelectedFiles)' != ''
-                    AND '$(QtHasTranslation)' == 'true'
-                    AND '@(QtTranslationUpdate)' == ''
-                    AND '@(QtTranslationRelease)' == '') was evaluated as ('' != ''
-                    AND '' == 'true'
-                    AND '' == ''
-                    AND '' == '').
-   1:2>Done building target "QtTranslationSelect" in project "sample-framework.vcxproj".
-       Target "QtTranslationUpdate" skipped, due to false condition; ('@(QtTranslationUpdate)' != '') was evaluated as ('' != '').
-       Target "QtTranslationRelease" skipped, due to false condition; ('@(QtTranslationRelease)' != '') was evaluated as ('' != '').
-   1:2>Target "QtTranslation" in file "C:\work\QtMsBuild\translation\qttranslation.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "Build" depends on it):
-   1:2>Done building target "QtTranslation" in project "sample-framework.vcxproj".
-       Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-       Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-   1:2>Target "Build" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.BuildSteps.Targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (entry point):
-   1:2>Done building target "Build" in project "sample-framework.vcxproj".
-   1:2>Done Building Project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (Build target(s)).
-     1>Done executing task "MSBuild".
-     1>Done building target "QtOuterBuild" in project "sample-framework.vcxproj".
-     1>Target "QtEnterCriticalSection_FinalizeBuildStatus" in file "C:\work\QtMsBuild\qt_globals.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "Build" depends on it):
-       Task "CriticalSection"
-       Done executing task "CriticalSection".
-     1>Done building target "QtEnterCriticalSection_FinalizeBuildStatus" in project "sample-framework.vcxproj".
-     1>Target "FinalizeBuildStatus" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "Build" depends on it):
-       Task "Delete" skipped, due to false condition; (Exists($(LastBuildUnsuccessful))) was evaluated as (Exists(debug\sample-framework.tlog\unsuccessfulbuild)).
-       Task "Touch"
-         Touching "debug\sample-framework.tlog\sample-framework.lastbuildstate".
-       Done executing task "Touch".
-     1>Done building target "FinalizeBuildStatus" in project "sample-framework.vcxproj".
-     1>Target "QtLeaveCriticalSection_FinalizeBuildStatus" in file "C:\work\QtMsBuild\qt_globals.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "Build" depends on it):
-       Task "CriticalSection"
-       Done executing task "CriticalSection".
-     1>Done building target "QtLeaveCriticalSection_FinalizeBuildStatus" in project "sample-framework.vcxproj".
-     1>Target "QtTranslationPrepare" in file "C:\work\QtMsBuild\translation\qttranslation.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtTranslationSelect" depends on it):
-     1>Done building target "QtTranslationPrepare" in project "sample-framework.vcxproj".
-     1>Target "QtTranslationSelect" in file "C:\work\QtMsBuild\translation\qttranslation.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtTranslation" depends on it):
-       Task "Delete" skipped, due to false condition; ('%(QtTranslationUpdate.Force)' == 'true') was evaluated as ('' == 'true').
-       Task "Delete" skipped, due to false condition; ('%(QtTranslationRelease.Force)' == 'true') was evaluated as ('' == 'true').
-       Task "Message" skipped, due to false condition; ('$(SelectedFiles)' != ''
-                    AND '$(QtHasTranslation)' == 'true'
-                    AND '@(QtTranslationUpdate)' == ''
-                    AND '@(QtTranslationRelease)' == '') was evaluated as ('' != ''
-                    AND '' == 'true'
-                    AND '' == ''
-                    AND '' == '').
-     1>Done building target "QtTranslationSelect" in project "sample-framework.vcxproj".
-       Target "QtTranslationUpdate" skipped, due to false condition; ('@(QtTranslationUpdate)' != '') was evaluated as ('' != '').
-       Target "QtTranslationRelease" skipped, due to false condition; ('@(QtTranslationRelease)' != '') was evaluated as ('' != '').
-     1>Target "QtTranslation" in file "C:\work\QtMsBuild\translation\qttranslation.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "Build" depends on it):
-     1>Done building target "QtTranslation" in project "sample-framework.vcxproj".
-       Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-       Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-     1>Target "Build" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.BuildSteps.Targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (entry point):
-     1>Done building target "Build" in project "sample-framework.vcxproj".
-     1>Done Building Project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (Build target(s)).
+     1>Done building target "QtLeaveCriticalSection_OnError" in project "sample-framework.vcxproj".
+     1>Done Building Project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
        "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (Build target) (1) ->
        "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (Build target) (1:2) ->
        (ClCompile target) -> 
-         d:\egyetem\6.felev\onlab\sample-framework-master\bezierviewer.cpp(105): warning C4267: 'argument': conversion from 'size_t' to 'GLuint', possible loss of data
+         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(8): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(9): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(48): warning C4189: 'z': local variable is initialized but not referenced
+         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(134): warning C4244: 'argument': conversion from 'size_t' to 'double', possible loss of data
+         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(159): warning C4244: 'argument': conversion from 'size_t' to 'double', possible loss of data
+         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(184): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(190): warning C4018: '<': signed/unsigned mismatch
+         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(224): warning C4244: 'argument': conversion from 'size_t' to 'double', possible loss of data
+         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(281): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(306): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+         d:\egyetem\6.felev\onlab\sample-framework-master\bezierviewer.cpp(111): warning C4267: 'argument': conversion from 'size_t' to 'GLuint', possible loss of data
+         d:\egyetem\6.felev\onlab\sample-framework-master\bezierwindow.cpp(41): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
 
-    1 Warning(s)
-    0 Error(s)
 
-Time Elapsed 00:00:07.07
+       "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (Build target) (1) ->
+       "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (Build target) (1:2) ->
+       (ClCompile target) -> 
+         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(208): error C2039: 'gradient': is not a member of 'autodiff'
+         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(209): error C2039: 'at': is not a member of 'autodiff'
+
+    12 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:08.72

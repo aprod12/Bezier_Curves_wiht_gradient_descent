@@ -185,6 +185,34 @@ double BezierCurve::sumCurvature()
 	}
 	return cur;
 }
+autodiff::dual BezierCurve::energyFunction(const autodiff::VectorXdual & x) {
+	BezierCurve c;
+	for (size_t i = 0; i < (x.size() / 3) - 1; i++)
+	{
+		c.cp.push_back(Point((double)x[3 * i], (double)x[3 * i + 1], 
+			(double)x[3 * i + 2]));
+	}
+	return c.sumCurvature();
+}
+
+Vector BezierCurve::getGradientVector(int cpIndex)
+{
+	autodiff::VectorXdual x(cp.size() * 3);
+	for (size_t i = 0; i < cp.size() - 1; i++)
+	{
+		x[3 * i] = cp[i].x;
+		x[3 * i + 1] = cp[i].y;
+		x[3 * i + 2] = cp[i].z;
+	}
+	autodiff::dual u;
+	Eigen::VectorXd g = autodiff::gradient(energyFunction, autodiff::wrt(x), 
+		autodiff::at(x), u);
+	return Vector(g[3 * cpIndex], g[3 * cpIndex + 1], g[3 * cpIndex + 2]);
+}
+
+void BezierCurve::gradientDescend()
+{
+}
 
 //TODO: ide lehet kell majd az n *-resz de meg nem biztos!!!
 Point BezierCurve::getFirstDerivatedValue(double u) {

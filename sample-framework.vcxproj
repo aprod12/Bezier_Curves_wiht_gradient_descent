@@ -78,14 +78,14 @@
   </ImportGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Egyetem\Work\Tobbi_Onlab\OpenMesh8.1_src\src;D:\Egyetem\Work\Tobbi_Onlab\libQGLViewer-2.7.2;.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;/usr/include/eigen3;debug;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Egyetem\6.felev\Onlab\sample-framework-master\eigen-3.3.9;D:\Egyetem\6.felev\Onlab\sample-framework-master\autodiff;D:\Egyetem\Work\Tobbi_Onlab\OpenMesh8.1_src\src;D:\Egyetem\Work\Tobbi_Onlab\libQGLViewer-2.7.2;.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;/usr/include/eigen3;debug;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>debug\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <LanguageStandard>stdcpp14</LanguageStandard>
+      <LanguageStandard>stdcpp17</LanguageStandard>
       <ObjectFileName>debug\</ObjectFileName>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_USE_MATH_DEFINES;_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -134,14 +134,14 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Egyetem\Work\Tobbi_Onlab\OpenMesh8.1_src\src;D:\Egyetem\Work\Tobbi_Onlab\libQGLViewer-2.7.2;.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;/usr/include/eigen3;release;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Egyetem\6.felev\Onlab\sample-framework-master\eigen-3.3.9;D:\Egyetem\6.felev\Onlab\sample-framework-master\autodiff;D:\Egyetem\Work\Tobbi_Onlab\OpenMesh8.1_src\src;D:\Egyetem\Work\Tobbi_Onlab\libQGLViewer-2.7.2;.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;/usr/include/eigen3;release;/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>release\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>
       <DebugInformationFormat>None</DebugInformationFormat>
       <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <ExceptionHandling>Sync</ExceptionHandling>
-      <LanguageStandard>stdcpp14</LanguageStandard>
+      <LanguageStandard>stdcpp17</LanguageStandard>
       <ObjectFileName>release\</ObjectFileName>
       <Optimization>MaxSpeed</Optimization>
       <PreprocessorDefinitions>_USE_MATH_DEFINES;_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;QT_NO_DEBUG;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>

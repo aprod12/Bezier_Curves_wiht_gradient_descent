@@ -2,8 +2,9 @@
 #include <random>
 
 
-BezierViewer::BezierViewer(QWidget * parent): showControlPoints(false),
-QGLViewer(parent), selected_vertex(-1)
+BezierViewer::BezierViewer(QWidget * parent): showControlPoints(false), 
+QGLViewer(parent), selected_vertex(-1),
+sumCurve(0), arcLengthByFractions(0), arcLenghtIntegral(0), error(0)
 {
 	setSelectRegionWidth(10);
 	setSelectRegionHeight(10);
@@ -30,10 +31,6 @@ void BezierViewer::draw() {
 		Point p = curve.evaluateByDeCasteljau(i);
 		glVertex3f(p.x, p.y, p.z);
 	}
-	sumCurve = curve.sumCurvature();
-	arcLengthByFractions = curve.arcLengthByFractions();
-	arcLenghtIntegral = curve.arcLengthByNumericalIntegral();
-	error = abs(arcLengthByFractions - arcLenghtIntegral);
 	std::string tmp = "Arc length by fractions: " + std::to_string(arcLengthByFractions) + " | " +
 		"Arc length by integral: "  + std::to_string(arcLenghtIntegral) + " | Error: " + 
 		std::to_string(error) + " | Curve sum: " + std::to_string(sumCurve) ;
@@ -50,6 +47,14 @@ void BezierViewer::keyPressEvent(QKeyEvent * e)
 				showControlPoints = !showControlPoints;
 				update();
 				break;
+			case Qt::Key_R:
+				sumCurve = curve.sumCurvature();
+				arcLengthByFractions = curve.arcLengthByFractions();
+				arcLenghtIntegral = curve.arcLengthByNumericalIntegral();
+				error = abs(arcLengthByFractions - arcLenghtIntegral);
+				update();
+				break;
+
 		}
 		QGLViewer::keyPressEvent(e);
 }
@@ -77,6 +82,7 @@ QString BezierViewer::helpString() const
 		"<p>The following hotkeys are available:</p>"
 		"<ul>"
 		"<li>&nbsp;C: Toggle control point visualization</li>"
+		"<li>&nbsp;R: Refresh curve information</li>"
 		"</ul>");
 	return text;
 }

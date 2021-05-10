@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
+    "\\autodiff\\cmake",
     "\\GaussQuadrature"
   ],
-  "SelectedNode": "\\GaussQuadrature\\example.c",
   "PreviewInSolutionExplorer": false
 }
