@@ -205,6 +205,8 @@
     </QtMoc>
     <QtMoc Include="BezierViewer.h" />
     <QtMoc Include="BezierWindow.h" />
+    <ClInclude Include="autodiff\autodiff\forward\eigen.hpp" />
+    <ClInclude Include="autodiff\autodiff\forward\forward.hpp" />
     <ClInclude Include="BezierCurve.h" />
     <ClInclude Include="GaussQuadrature\gauss_legendre.h" />
     <ClInclude Include="MyViewer.hpp" />

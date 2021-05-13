@@ -136,15 +136,17 @@ void BezierCurve::derivativeControlPoints(size_t d, PointMatrix &dcp) const
 }
 
 void BezierCurve::getFristDerivateControlPoints(PointVector& derivateCp) {
+	derivateCp.clear();
 	for (size_t i = 0; i < n; i++)
 	{
-		derivateCp[i] =  cp[i + 1] - cp[i];
+		derivateCp.push_back((cp[i + 1] - cp[i]));
 	}
 }
 void BezierCurve::getSecondDerivateControlPoints(PointVector& secondDerivateCp) {
+	secondDerivateCp.clear();
 	for (size_t i = 0; i < n - 1; i++)
 	{
-		secondDerivateCp[i] = derivatedCp[i + 1] - derivatedCp[i];
+		secondDerivateCp.push_back(derivatedCp[i + 1] - derivatedCp[i]);
 	}
 }
 
@@ -176,9 +178,9 @@ double BezierCurve::curveIntegralBaseFunction(double u, void * data)
 	return result;
 }
 
-double BezierCurve::sumCurvature()
+autodiff::dual BezierCurve::sumCurvature()
 {
-	double cur;
+	autodiff::dual cur;
 	for (size_t i = 2; i < 128; i++)
 	{
 		cur = gauss_legendre(i, curveIntegralBaseFunction, this, 0, 1);
@@ -187,31 +189,43 @@ double BezierCurve::sumCurvature()
 }
 autodiff::dual BezierCurve::energyFunction(const autodiff::VectorXdual & x) {
 	BezierCurve c;
-	for (size_t i = 0; i < (x.size() / 3) - 1; i++)
+	for (size_t i = 0; i < (x.size() / 3); i++)
 	{
 		c.cp.push_back(Point((double)x[3 * i], (double)x[3 * i + 1], 
 			(double)x[3 * i + 2]));
 	}
+	c.n = c.cp.size() - 1;
 	return c.sumCurvature();
 }
 
-Vector BezierCurve::getGradientVector(int cpIndex)
+VectorVector BezierCurve::getGradientVector()
 {
-	autodiff::VectorXdual x(cp.size() * 3);
-	for (size_t i = 0; i < cp.size() - 1; i++)
+	autodiff::VectorXdual x((cp.size() * 3));
+	VectorVector vv;
+	for (size_t i = 0; i < cp.size(); i++)
 	{
 		x[3 * i] = cp[i].x;
 		x[3 * i + 1] = cp[i].y;
 		x[3 * i + 2] = cp[i].z;
 	}
 	autodiff::dual u;
-	Eigen::VectorXd g = autodiff::gradient(energyFunction, autodiff::wrt(x), 
-		autodiff::at(x), u);
-	return Vector(g[3 * cpIndex], g[3 * cpIndex + 1], g[3 * cpIndex + 2]);
+	Eigen::VectorXd g = autodiff::forward::gradient(energyFunction, autodiff::wrt(x), 
+		autodiff::forward::at(x), u);
+	for (size_t i = 0; i < cp.size(); i++)
+	{
+		Vector v = Vector(g[3 * i], g[3 * i + 1], g[3 * i + 2]);
+		vv.push_back(v);
+	}
+	return vv;
 }
 
 void BezierCurve::gradientDescend()
 {
+	VectorVector vv(getGradientVector());
+	for (size_t i = 1; i < cp.size() - 1; i++)
+	{
+		cp[i] -= vv[i];
+	}
 }
 
 //TODO: ide lehet kell majd az n *-resz de meg nem biztos!!!

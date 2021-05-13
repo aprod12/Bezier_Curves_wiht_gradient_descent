@@ -102,5 +102,11 @@
     <ClInclude Include="GaussQuadrature\gauss_legendre.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
+    <ClInclude Include="autodiff\autodiff\forward\eigen.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="autodiff\autodiff\forward\forward.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

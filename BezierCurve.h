@@ -1,12 +1,12 @@
 #pragma once
 
-// Vector típus a szokåsos mŹveletekkel
+
 #include "vector.hh"
 #include <algorithm>
 #include "GaussQuadrature/gauss_legendre.h"
 #include <math.h> 
 #include "eigen-3.3.9/Eigen/Core"
-#include "autodiff/autodiff/forward.hpp"
+#include "autodiff/forward.hpp"
 #include "autodiff/forward/eigen.hpp"
 
 using Point = Vector;
@@ -18,8 +18,8 @@ using PointMatrix = std::vector<PointVector>;
 
 struct BezierCurve
 {
-	size_t n;                     // fokszåm => n + 1 kontrollpont
-	PointVector cp;		            // kontrollpontok
+	size_t n;                     
+	PointVector cp;		            
 	std::vector<int> coefficients;
 	PointVector derivatedCp;
 	PointVector secondDerivatedCp;
@@ -46,14 +46,14 @@ struct BezierCurve
 	double arcLengthByFractions() const;
 	double arcLengthByNumericalIntegral();
 	double vectorLength(Vector v) const;
-	double static derivatedValueLength(double x, void* data) ;
 	Point crossProduct(Point p1, Point p2);
 	void getSecondDerivateControlPoints(PointVector& secondDerivateCp);
 	Point getSecondDerivatedValue(double u);
 	double curvature(double u);
-	double static curveIntegralBaseFunction(double u, void* data);
-	double sumCurvature();
-	Vector getGradientVector(int index);
+	autodiff::dual sumCurvature();
+	VectorVector getGradientVector();	
 	void gradientDescend();
 	static autodiff::dual energyFunction(const autodiff::VectorXdual & x);
+	static double curveIntegralBaseFunction(double u, void* data);
+	static double derivatedValueLength(double x, void* data);
 };

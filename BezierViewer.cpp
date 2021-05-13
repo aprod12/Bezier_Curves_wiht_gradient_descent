@@ -48,10 +48,14 @@ void BezierViewer::keyPressEvent(QKeyEvent * e)
 				update();
 				break;
 			case Qt::Key_R:
-				sumCurve = curve.sumCurvature();
+				//sumCurve = curve.sumCurvature();
 				arcLengthByFractions = curve.arcLengthByFractions();
 				arcLenghtIntegral = curve.arcLengthByNumericalIntegral();
 				error = abs(arcLengthByFractions - arcLenghtIntegral);
+				update();
+				break;
+			case Qt::Key_0:
+				curve.gradientDescend();
 				update();
 				break;
 
