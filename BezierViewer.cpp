@@ -36,6 +36,14 @@ void BezierViewer::draw() {
 		std::to_string(error) + " | Curve sum: " + std::to_string(sumCurve) ;
 	displayMessage(QString::fromUtf8(tmp.c_str()));
 	glEnd();
+	glLineWidth(3.0);
+	glColor3d(0.0, 0.91, 0.28);
+	glBegin(GL_LINE_STRIP);
+	for (double i = 0.0; i <= 1.01; i += 0.01) {
+		Point p = curve.getFirstDerivatedValue(i);
+		glVertex3f(p.x, p.y, p.z);
+	}
+	glEnd();
 	if (axes.shown)
 		drawAxes();
 }
@@ -48,7 +56,7 @@ void BezierViewer::keyPressEvent(QKeyEvent * e)
 				update();
 				break;
 			case Qt::Key_R:
-				//sumCurve = curve.sumCurvature();
+				sumCurve = curve.sumCurvature();
 				arcLengthByFractions = curve.arcLengthByFractions();
 				arcLenghtIntegral = curve.arcLengthByNumericalIntegral();
 				error = abs(arcLengthByFractions - arcLenghtIntegral);
