@@ -196,22 +196,15 @@
     <ClCompile Include="BezierViewer.cpp" />
     <ClCompile Include="BezierWindow.cpp" />
     <ClCompile Include="GaussQuadrature\gauss_legendre.c" />
-    <ClCompile Include="MyViewer.cpp" />
-    <ClCompile Include="MyWindow.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="MyViewer.h">
-    </QtMoc>
     <QtMoc Include="BezierViewer.h" />
     <QtMoc Include="BezierWindow.h" />
     <ClInclude Include="autodiff\autodiff\forward\eigen.hpp" />
     <ClInclude Include="autodiff\autodiff\forward\forward.hpp" />
     <ClInclude Include="BezierCurve.h" />
     <ClInclude Include="GaussQuadrature\gauss_legendre.h" />
-    <ClInclude Include="MyViewer.hpp" />
-    <QtMoc Include="MyWindow.h">
-    </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="debug\moc_predefs.h.cbt">

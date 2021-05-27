@@ -37,12 +37,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MyViewer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MyWindow.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -60,15 +54,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="MyViewer.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <ClInclude Include="MyViewer.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <QtMoc Include="MyWindow.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
     <QtMoc Include="BezierViewer.h">
       <Filter>Header Files</Filter>
     </QtMoc>

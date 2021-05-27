@@ -31,9 +31,17 @@ void BezierViewer::draw() {
 		Point p = curve.evaluateByDeCasteljau(i);
 		glVertex3f(p.x, p.y, p.z);
 	}
+	auto a = curve.getGradientVector();
+	double ossz = 0;
+	for (size_t i = 0; i < a.size(); i++)
+	{
+		ossz += pow(a[i].norm(), 2);
+	}
+	ossz = sqrt(ossz);
 	std::string tmp = "Arc length by fractions: " + std::to_string(arcLengthByFractions) + " | " +
 		"Arc length by integral: "  + std::to_string(arcLenghtIntegral) + " | Error: " + 
-		std::to_string(error) + " | Curve sum: " + std::to_string(sumCurve) ;
+		std::to_string(error) + " | Curve sum: " + std::to_string(sumCurve) 
+		+" | Gradient norm: " + std::to_string(ossz);
 	displayMessage(QString::fromUtf8(tmp.c_str()));
 	glEnd();
 	glLineWidth(3.0);
@@ -41,7 +49,7 @@ void BezierViewer::draw() {
 	glBegin(GL_LINE_STRIP);
 	for (double i = 0.0; i <= 1.01; i += 0.01) {
 		Point p = curve.getFirstDerivatedValue(i);
-		glVertex3f(p.x, p.y, p.z);
+		//glVertex3f(p.x, p.y, p.z);
 	}
 	glEnd();
 	if (axes.shown)
@@ -55,13 +63,31 @@ void BezierViewer::keyPressEvent(QKeyEvent * e)
 				showControlPoints = !showControlPoints;
 				update();
 				break;
-			case Qt::Key_R:
-				sumCurve = curve.sumCurvature();
+			case Qt::Key_R: {
+				autodiff::VectorXdual x((curve.cp.size() * 3) - 6);
+				autodiff::VectorXdual p(6);
+				VectorVector vv;
+				size_t index = 0;
+				for (size_t i = 1; i < curve.cp.size() - 1; i++)
+				{
+					x[3 * index] = curve.cp[i].x;
+					x[3 * index + 1] = curve.cp[i].y;
+					x[3 * index + 2] = curve.cp[i].z;
+					index++;
+				}
+				p[0] = curve.cp[0].x;
+				p[1] = curve.cp[0].y;
+				p[2] = curve.cp[0].z;
+				p[3] = curve.cp[curve.cp.size() - 1].x;
+				p[4] = curve.cp[curve.cp.size() - 1].y;
+				p[5] = curve.cp[curve.cp.size() - 1].z;
+				sumCurve = curve.energyFunction(x,p).val;
 				arcLengthByFractions = curve.arcLengthByFractions();
 				arcLenghtIntegral = curve.arcLengthByNumericalIntegral();
 				error = abs(arcLengthByFractions - arcLenghtIntegral);
 				update();
 				break;
+			}
 			case Qt::Key_0:
 				curve.gradientDescend();
 				update();
@@ -95,6 +121,7 @@ QString BezierViewer::helpString() const
 		"<ul>"
 		"<li>&nbsp;C: Toggle control point visualization</li>"
 		"<li>&nbsp;R: Refresh curve information</li>"
+		"<li>&nbsp;0: Gradient descent step</li>"
 		"</ul>");
 	return text;
 }

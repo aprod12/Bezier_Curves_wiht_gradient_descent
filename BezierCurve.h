@@ -32,11 +32,6 @@ struct BezierCurve
 	PointVector secondDerivatedCp;
 
 
-	Point getFunctionValue(double t);
-	void init(int g);
-	int factorial(int n);
-
-
 	void regenerateControlPoints();
 	Point randomPoint(double fMin, double  fMax);
 

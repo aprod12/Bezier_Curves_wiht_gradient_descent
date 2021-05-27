@@ -1,30 +1,5 @@
 #include "BezierCurve.h"
 
-void BezierCurve::init(int g) {
-	coefficients = std::vector<int>(g + 1);
-	n = g;
-	for (int i = 0; i < coefficients.size(); i++)
-	{
-		coefficients[i] = factorial(coefficients.size()) /
-			(factorial(i) * factorial(coefficients.size() - i));
-	}
-}
-Point BezierCurve::getFunctionValue(double t) {
-	double sum = 0;
-	for (int i = 0; i < coefficients.size(); i++) {
-		sum += coefficients[i] * pow(t, i)
-			* pow((1 - t), coefficients.size() - i);
-	}
-	return Point(t, sum, 0.0);
-}
-
-int BezierCurve::factorial(int n) {
-	if (n = 1)
-		return 1;
-	else
-		return n * factorial(n - 1);
-}
-
 void BezierCurve::regenerateControlPoints()
 {
 	if (cp.size() <= n) {
@@ -33,7 +8,7 @@ void BezierCurve::regenerateControlPoints()
 		cp.clear();
 		for (size_t i = 0; i < n + 1; i++)
 		{
-			cp.push_back(randomPoint(-1.0, 1.0));
+			cp.push_back(randomPoint(1.0, -1.0));
 		}
 	}
 }
@@ -183,19 +158,29 @@ double BezierCurve::sumCurvature()
 	double cur = 0.0;
 	for (size_t i = 0; i < 64; i++)
 	{
-		cur += (1.0/2.0) * w128[i] * 
-			curveIntegralBaseFunction((1.0/2.0)* x128[i] + (1.0/2.0), this);
+		cur += w128[i] * 
+			curveIntegralBaseFunction(x128[i], this);
 	}
 	return cur;
+}
+size_t n_choose_k(size_t n, size_t k) {
+	// Base Cases
+	if (k > n)
+		return 0;
+	if (k == 0 || k == n)
+		return 1;
+
+	// Recur
+	return n_choose_k(n - 1, k - 1)
+		+ n_choose_k(n - 1, k);
 }
 #pragma region autodiff
 
 autodiff::VectorXdual BezierCurve::firstDerivate(const autodiff::VectorXdual & x, 
 	const autodiff::VectorXdual& p,double u) {
-	autodiff::VectorXdual der(3);
+	autodiff::VectorXdual der = autodiff::VectorXdual::Zero(3);
 	DoubleVector coeff;
 	int degree = ((x.size() + p.size())/ 3) - 1;
-	bernsteinAll(degree - 1, u, coeff);
 	autodiff::VectorXdual ctr1(3), ctr2(3);
 	size_t i = 0;
 	ctr1[0] = p[3 * i];
@@ -204,7 +189,7 @@ autodiff::VectorXdual BezierCurve::firstDerivate(const autodiff::VectorXdual & x
 	ctr2[0] = x[3 * i ];
 	ctr2[1] = x[3 * i + 1];
 	ctr2[2] = x[3 * i + 2];
-	der += degree * coeff[0] * (ctr2 - ctr1);
+	der += degree * n_choose_k(degree - 1, 0) * pow(1 - u, degree- 1) * (ctr2 - ctr1);
 	for (i = 0; i < (x.size() / 3) - 1; i++)
 	{
 		ctr1[0] = x[3 * i];
@@ -213,7 +198,8 @@ autodiff::VectorXdual BezierCurve::firstDerivate(const autodiff::VectorXdual & x
 		ctr2[0] = x[3 * (i + 1)];
 		ctr2[1] = x[3 * (i + 1) + 1];
 		ctr2[2] = x[3 * (i + 1) + 2];
-		der += degree * coeff[i + 1] * (ctr2 - ctr1);
+		der += degree * n_choose_k(degree - 1, i + 1) * pow(1 - u, degree - (i + 1) - 1) *
+			pow(u, i+1)*(ctr2 - ctr1);
 	}
 	i = 1;
 	ctr1[0] = x[3 * ((x.size() / 3) - 1)];
@@ -222,7 +208,8 @@ autodiff::VectorXdual BezierCurve::firstDerivate(const autodiff::VectorXdual & x
 	ctr2[0] = p[3 * i ];
 	ctr2[1] = p[3 * i  + 1];
 	ctr2[2] = p[3 * i  + 2];
-	der += degree * coeff[degree - 1] * (ctr2 - ctr1);
+	der += degree * n_choose_k(degree - 1, degree - 1) * pow(u, degree - 1) 
+		* (ctr2 - ctr1);
 	return der;
 }
 autodiff::VectorXdual BezierCurve::secondDerivate(const autodiff::VectorXdual & x,
@@ -242,8 +229,8 @@ autodiff::VectorXdual BezierCurve::secondDerivate(const autodiff::VectorXdual & 
 	ctr3[0] = x[3 * (i + 1)];
 	ctr3[1] = x[3 * (i + 1) + 1];
 	ctr3[2] = x[3 * (i + 1) + 2];
-	der += degree * (degree - 1) * coeff[0] *
-		((ctr2 - ctr1) - (ctr3 - ctr2));
+	der += degree * (degree - 1) * n_choose_k(degree - 2, 0) * pow(1-u, degree - 2) *
+		((ctr3 - ctr2) - (ctr2 - ctr1));
 	for (i = 0; i < (x.size() / 3) - 2; i++)
 	{
 		ctr1[0] = x[3 * i];
@@ -255,8 +242,9 @@ autodiff::VectorXdual BezierCurve::secondDerivate(const autodiff::VectorXdual & 
 		ctr3[0] = x[3 * (i + 2)];
 		ctr3[1] = x[3 * (i + 2) + 1];
 		ctr3[2] = x[3 * (i + 2) + 2];
-		der += degree * (degree - 1) * coeff[i + 1] * 
-			((ctr2 - ctr1) - (ctr3 - ctr2));
+		der += degree * (degree - 1) * n_choose_k(degree - 2, i+1) * 
+			pow(1 - u, degree - (i+1) - 2) * pow(u, i+1) *
+			((ctr3 - ctr2) - (ctr2 - ctr1));
 	}
 	i = 1;
 	ctr1[0] = x[3 * ((x.size() / 3) - 2)];
@@ -268,8 +256,8 @@ autodiff::VectorXdual BezierCurve::secondDerivate(const autodiff::VectorXdual & 
 	ctr3[0] = p[3 * i ];
 	ctr3[1] = p[3 * i  + 1];
 	ctr3[2] = p[3 * i  + 2];
-	der += degree * (degree - 1) * coeff[degree - 2] *
-		((ctr2 - ctr1) - (ctr3 - ctr2));
+	der += degree * (degree - 1) * n_choose_k(degree - 2, 0) * pow( u, degree - 2) *
+		((ctr3 - ctr2) - (ctr2 - ctr1));
 	return der;
 }
 autodiff::dual BezierCurve::curvatureAutodiff(const autodiff::VectorXdual & x,
@@ -282,15 +270,25 @@ autodiff::dual BezierCurve::curvatureAutodiff(const autodiff::VectorXdual & x,
 autodiff::dual BezierCurve::energyFunction(const autodiff::VectorXdual & x,
 	const autodiff::VectorXdual& p) {
 	BezierCurve c;
-	autodiff::dual sumCurve;
+	autodiff::dual sumCurve = 0;
 	for (size_t i = 0; i < 64; i++)
 	{
-		sumCurve += (1.0/2.0) * w128[i] * 
-			(pow(c.curvatureAutodiff(x, p,(1.0/2.0) * x128[i] + (1.0/2.0)), 2) * 
-			c.vectorLength(c.firstDerivate(x, p,(1.0/2.0) * x128[i] + (1.0/2.0))));
+		sumCurve +=  w128[i] * 
+			(pow(c.curvatureAutodiff(x, p, x128[i]) , 2) * 
+			c.vectorLength(c.firstDerivate(x, p, x128[i])));
 	}
 	return sumCurve;
 }
+//autodiff::dual BezierCurve::energyFunction(const autodiff::VectorXdual & x,
+//	const autodiff::VectorXdual& p) {
+//	BezierCurve c;
+//	autodiff::dual sumCurve = 0;
+//	for (size_t i = 0; i < 64; i++)
+//	{
+//		sumCurve +=  w128[i] *c.vectorLength(c.firstDerivate(x, p,  x128[i]));
+//	}
+//	return sumCurve;
+//}
 #pragma endregion
 VectorVector BezierCurve::getGradientVector()
 {
@@ -313,8 +311,8 @@ VectorVector BezierCurve::getGradientVector()
 	p[5] = cp[cp.size() - 1].z;
 	autodiff::dual u;
 	Eigen::VectorXd g = autodiff::forward::gradient(energyFunction, 
-		autodiff::wrtpack(p, x), autodiff::forward::at(x, p), u);
-	for (size_t i = 0; i < cp.size(); i++)
+		autodiff::wrt(x), autodiff::forward::at(x, p), u);
+	for (size_t i = 0; i < cp.size() - 2; i++)
 	{
 		Vector v = Vector(g[3 * i], g[3 * i + 1], g[3 * i + 2]);
 		vv.push_back(v);
@@ -325,11 +323,11 @@ VectorVector BezierCurve::getGradientVector()
 void BezierCurve::gradientDescend()
 {
 	VectorVector vv(getGradientVector());
-	while(sumCurvature() > 0.1)
-	for (size_t i = 1; i < cp.size() - 1; i++)
-	{
-		cp[i] -= vv[i];
-	}
+		int index = 0;
+		for (size_t i = 1; i < cp.size() - 1; i++)
+		{
+			cp[i] -= vv[index++] * 0.01;
+		}
 }
 
 //TODO: ide lehet kell majd az n *-resz de meg nem biztos!!!
@@ -429,10 +427,10 @@ autodiff::VectorXdual BezierCurve::crossProduct(const autodiff::VectorXdual& p1,
 
 double BezierCurve::arcLengthByNumericalIntegral()
 {
-	double length;
-	for (size_t i = 2; i < 128; i++)
+	double length = 0;
+	for (size_t i = 0; i < 64; i++)
 	{
-		length = gauss_legendre(i, derivatedValueLength, this, 0, 1);
+		length += w128[i] * derivatedValueLength( x128[i], this);
 	}
 	return length;
 }

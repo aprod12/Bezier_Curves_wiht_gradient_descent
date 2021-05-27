@@ -1,10 +1,10 @@
-﻿Build started 2021. 05. 18. 19:56:17.
+﻿Build started 2021. 05. 27. 17:54:02.
      1>Project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "15.0".
      1>Target "_PrepareForReferenceResolution" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "ResolveReferences" depends on it):
        Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
      1>Done building target "_PrepareForReferenceResolution" in project "sample-framework.vcxproj".
-       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('BezierCurve.cpp;BezierViewer.cpp;BezierWindow.cpp;GaussQuadrature\gauss_legendre.c;MyViewer.cpp;MyWindow.cpp;main.cpp'!='' and 'false'=='true' and '' != 'false').
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('BezierCurve.cpp;BezierViewer.cpp;BezierWindow.cpp;GaussQuadrature\gauss_legendre.c;main.cpp'!='' and 'false'=='true' and '' != 'false').
      1>Target "BeforeResolveReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "ResolveReferences" depends on it):
      1>Done building target "BeforeResolveReferences" in project "sample-framework.vcxproj".
      1>Target "AssignProjectConfiguration" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "ResolveReferences" depends on it):
@@ -121,7 +121,7 @@
        Done executing task "MakeDir".
      1>Done building target "PrepareForBuild" in project "sample-framework.vcxproj".
        Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
-       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('BezierCurve.cpp;BezierViewer.cpp;BezierWindow.cpp;GaussQuadrature\gauss_legendre.c;MyViewer.cpp;MyWindow.cpp;main.cpp'!='' and 'false'=='true' and '' != 'false').
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('BezierCurve.cpp;BezierViewer.cpp;BezierWindow.cpp;GaussQuadrature\gauss_legendre.c;main.cpp'!='' and 'false'=='true' and '' != 'false').
        Target "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
      1>Target "ResolveSDKReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "ResolveAssemblyReferences" depends on it):
        Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
@@ -220,7 +220,7 @@
        Task "MSBuild"
          Global Properties:
            QtInnerBuild=D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj
-           RandomFileName=dmszylou.2ed
+           RandomFileName=bizmueqn.wor
      1>Project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (1) is building "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (1:2) on node 2 (Build target(s)).
    1:2>Building with tools version "15.0".
        Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
@@ -245,10 +245,10 @@
    1:2>Target "SetTelemetryEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.DesignTime.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "Build" depends on it):
        Using "SetEnv" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         VSTEL_SolutionSessionID={43E0C3A1-CAD9-4432-873E-B7865D7D8552}
+         VSTEL_SolutionSessionID={D61D4364-0221-4E87-AC19-709930A41748}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=168588500
+         VSTEL_CurrentSolutionBuildID=525643359
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={258D3AE3-C043-3843-A1D9-53B251FEBBD7}
@@ -260,7 +260,7 @@
    1:2>Target "_PrepareForReferenceResolution" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "ResolveReferences" depends on it):
        Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
    1:2>Done building target "_PrepareForReferenceResolution" in project "sample-framework.vcxproj".
-       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('BezierCurve.cpp;BezierViewer.cpp;BezierWindow.cpp;GaussQuadrature\gauss_legendre.c;MyViewer.cpp;MyWindow.cpp;main.cpp'!='' and 'false'=='true' and '' != 'false').
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('BezierCurve.cpp;BezierViewer.cpp;BezierWindow.cpp;GaussQuadrature\gauss_legendre.c;main.cpp'!='' and 'false'=='true' and '' != 'false').
    1:2>Target "BeforeResolveReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "ResolveReferences" depends on it):
    1:2>Done building target "BeforeResolveReferences" in project "sample-framework.vcxproj".
    1:2>Target "AssignProjectConfiguration" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "ResolveReferences" depends on it):
@@ -356,7 +356,7 @@
        Done executing task "MakeDir".
    1:2>Done building target "PrepareForBuild" in project "sample-framework.vcxproj".
        Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
-       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('BezierCurve.cpp;BezierViewer.cpp;BezierWindow.cpp;GaussQuadrature\gauss_legendre.c;MyViewer.cpp;MyWindow.cpp;main.cpp'!='' and 'false'=='true' and '' != 'false').
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('BezierCurve.cpp;BezierViewer.cpp;BezierWindow.cpp;GaussQuadrature\gauss_legendre.c;main.cpp'!='' and 'false'=='true' and '' != 'false').
        Target "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
    1:2>Target "ResolveSDKReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "ResolveAssemblyReferences" depends on it):
        Task "ResolveSDKReference" skipped, due to false condition; ('@(SDKReference)'!='') was evaluated as (''!='').
@@ -594,24 +594,7 @@
        Task "Message" skipped, due to false condition; ('$(QtDebug)' == 'true') was evaluated as ('false' == 'true').
        Task "Delete" skipped, due to false condition; ('$(SelectedFiles)' != '' AND '$(is_selected)' == 'true') was evaluated as ('' != '' AND 'false' == 'true').
    1:2>Done building target "QtMocPrepare" in project "sample-framework.vcxproj".
-   1:2>Target "QtMocPrepare" in file "C:\work\QtMsBuild\moc\qtmoc.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtMoc" depends on it):
-       Building target "QtMocPrepare" completely.
-       Output file "@(QtMoc->'####### Don't skip this target #######')" does not exist.
-       Task "Message" skipped, due to false condition; ('$(QtDebug)' == 'true') was evaluated as ('false' == 'true').
-       Task "Delete" skipped, due to false condition; ('$(SelectedFiles)' != '' AND '$(is_selected)' == 'true') was evaluated as ('' != '' AND 'false' == 'true').
-   1:2>Done building target "QtMocPrepare" in project "sample-framework.vcxproj".
-   1:2>Target "QtMocPrepare" in file "C:\work\QtMsBuild\moc\qtmoc.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtMoc" depends on it):
-       Building target "QtMocPrepare" completely.
-       Output file "@(QtMoc->'####### Don't skip this target #######')" does not exist.
-       Task "Message" skipped, due to false condition; ('$(QtDebug)' == 'true') was evaluated as ('false' == 'true').
-       Task "Delete" skipped, due to false condition; ('$(SelectedFiles)' != '' AND '$(is_selected)' == 'true') was evaluated as ('' != '' AND 'false' == 'true').
-   1:2>Done building target "QtMocPrepare" in project "sample-framework.vcxproj".
        Target "QtMocPrepare" skipped. Previously built successfully.
-   1:2>Target "QtMocSetModified" in file "C:\work\QtMsBuild\moc\qtmoc.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtMoc" depends on it):
-       Skipping target "QtMocSetModified" because all output files are up-to-date with respect to the input files.
-       Input files: D:\Egyetem\6.felev\Onlab\sample-framework-master\MyViewer.h
-       Output files: Debug\moc_MyViewer.cpp
-   1:2>Done building target "QtMocSetModified" in project "sample-framework.vcxproj".
    1:2>Target "QtMocSetModified" in file "C:\work\QtMsBuild\moc\qtmoc.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtMoc" depends on it):
        Skipping target "QtMocSetModified" because all output files are up-to-date with respect to the input files.
        Input files: D:\Egyetem\6.felev\Onlab\sample-framework-master\BezierViewer.h
@@ -621,11 +604,6 @@
        Skipping target "QtMocSetModified" because all output files are up-to-date with respect to the input files.
        Input files: D:\Egyetem\6.felev\Onlab\sample-framework-master\BezierWindow.h
        Output files: Debug\moc_BezierWindow.cpp
-   1:2>Done building target "QtMocSetModified" in project "sample-framework.vcxproj".
-   1:2>Target "QtMocSetModified" in file "C:\work\QtMsBuild\moc\qtmoc.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtMoc" depends on it):
-       Skipping target "QtMocSetModified" because all output files are up-to-date with respect to the input files.
-       Input files: D:\Egyetem\6.felev\Onlab\sample-framework-master\MyWindow.h
-       Output files: Debug\moc_MyWindow.cpp
    1:2>Done building target "QtMocSetModified" in project "sample-framework.vcxproj".
        Target "QtMocPrepare" skipped. Previously built successfully.
    1:2>Target "QtGetDefaultClCompile" in file "C:\work\QtMsBuild\qt_globals.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtMocOverrideCpp" depends on it):
@@ -640,27 +618,6 @@
        Output file "@(QtMoc->'####### Don't skip this target #######')" does not exist.
        Task "Message" skipped, due to false condition; ('$(QtDebug)' == 'true') was evaluated as ('false' == 'true').
    1:2>Done building target "QtMocOverrideCpp" in project "sample-framework.vcxproj".
-   1:2>Target "QtMocOverrideCpp" in file "C:\work\QtMsBuild\moc\qtmoc_cl.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtMoc" depends on it):
-       Building target "QtMocOverrideCpp" completely.
-       Output file "@(QtMoc->'####### Don't skip this target #######')" does not exist.
-       Task "Message" skipped, due to false condition; ('$(QtDebug)' == 'true') was evaluated as ('false' == 'true').
-   1:2>Done building target "QtMocOverrideCpp" in project "sample-framework.vcxproj".
-   1:2>Target "QtMocOverrideCpp" in file "C:\work\QtMsBuild\moc\qtmoc_cl.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtMoc" depends on it):
-       Building target "QtMocOverrideCpp" completely.
-       Output file "@(QtMoc->'####### Don't skip this target #######')" does not exist.
-       Task "Message" skipped, due to false condition; ('$(QtDebug)' == 'true') was evaluated as ('false' == 'true').
-   1:2>Done building target "QtMocOverrideCpp" in project "sample-framework.vcxproj".
-   1:2>Target "QtMoc" in file "C:\work\QtMsBuild\moc\qtmoc.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtWorkPrepare" depends on it):
-       Building target "QtMoc" completely.
-       Input file "sample-framework.vcxproj" is newer than output file "Debug\moc_MyViewer.cpp".
-       Task "Message" skipped, due to false condition; ('$(QtDebug)' == 'true') was evaluated as ('false' == 'true').
-       Task "CreateProperty"
-       Done executing task "CreateProperty".
-       Task "Flatten"
-       Done executing task "Flatten".
-       Task "HostTranslatePaths"
-       Done executing task "HostTranslatePaths".
-   1:2>Done building target "QtMoc" in project "sample-framework.vcxproj".
    1:2>Target "QtMoc" in file "C:\work\QtMsBuild\moc\qtmoc.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtWorkPrepare" depends on it):
        Building target "QtMoc" completely.
        Input file "sample-framework.vcxproj" is newer than output file "Debug\moc_BezierViewer.cpp".
@@ -675,17 +632,6 @@
    1:2>Target "QtMoc" in file "C:\work\QtMsBuild\moc\qtmoc.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtWorkPrepare" depends on it):
        Building target "QtMoc" completely.
        Input file "sample-framework.vcxproj" is newer than output file "Debug\moc_BezierWindow.cpp".
-       Task "Message" skipped, due to false condition; ('$(QtDebug)' == 'true') was evaluated as ('false' == 'true').
-       Task "CreateProperty"
-       Done executing task "CreateProperty".
-       Task "Flatten"
-       Done executing task "Flatten".
-       Task "HostTranslatePaths"
-       Done executing task "HostTranslatePaths".
-   1:2>Done building target "QtMoc" in project "sample-framework.vcxproj".
-   1:2>Target "QtMoc" in file "C:\work\QtMsBuild\moc\qtmoc.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtWorkPrepare" depends on it):
-       Building target "QtMoc" completely.
-       Input file "sample-framework.vcxproj" is newer than output file "Debug\moc_MyWindow.cpp".
        Task "Message" skipped, due to false condition; ('$(QtDebug)' == 'true') was evaluated as ('false' == 'true').
        Task "CreateProperty"
        Done executing task "CreateProperty".
@@ -712,17 +658,6 @@
    1:2>Target "QtWorkPrepare" in file "C:\work\QtMsBuild\qt_globals.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtWork" depends on it):
        Building target "QtWorkPrepare" completely.
        Output file "@(QtWork->'####### Don't skip this target #######')" does not exist.
-       Task "Message" skipped, due to false condition; ('$(QtDebug)' == 'true' AND '@(QtWork)' != '') was evaluated as ('false' == 'true' AND 'MyViewer.h' != '').
-       Task "GetItemHash"
-       Done executing task "GetItemHash".
-       Task "FindInList"
-         Found "moc(MyViewer.h)".
-       Done executing task "FindInList".
-       Task "MakeDir" skipped, due to false condition; ('@(QtWork)' != '' AND '$(skip_work)' != 'true') was evaluated as ('' != '' AND 'true' != 'true').
-   1:2>Done building target "QtWorkPrepare" in project "sample-framework.vcxproj".
-   1:2>Target "QtWorkPrepare" in file "C:\work\QtMsBuild\qt_globals.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtWork" depends on it):
-       Building target "QtWorkPrepare" completely.
-       Output file "@(QtWork->'####### Don't skip this target #######')" does not exist.
        Task "Message" skipped, due to false condition; ('$(QtDebug)' == 'true' AND '@(QtWork)' != '') was evaluated as ('false' == 'true' AND 'BezierViewer.h' != '').
        Task "GetItemHash"
        Done executing task "GetItemHash".
@@ -739,17 +674,6 @@
        Done executing task "GetItemHash".
        Task "FindInList"
          Found "moc(BezierWindow.h)".
-       Done executing task "FindInList".
-       Task "MakeDir" skipped, due to false condition; ('@(QtWork)' != '' AND '$(skip_work)' != 'true') was evaluated as ('' != '' AND 'true' != 'true').
-   1:2>Done building target "QtWorkPrepare" in project "sample-framework.vcxproj".
-   1:2>Target "QtWorkPrepare" in file "C:\work\QtMsBuild\qt_globals.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "QtWork" depends on it):
-       Building target "QtWorkPrepare" completely.
-       Output file "@(QtWork->'####### Don't skip this target #######')" does not exist.
-       Task "Message" skipped, due to false condition; ('$(QtDebug)' == 'true' AND '@(QtWork)' != '') was evaluated as ('false' == 'true' AND 'MyWindow.h' != '').
-       Task "GetItemHash"
-       Done executing task "GetItemHash".
-       Task "FindInList"
-         Found "moc(MyWindow.h)".
        Done executing task "FindInList".
        Task "MakeDir" skipped, due to false condition; ('@(QtWork)' != '' AND '$(skip_work)' != 'true') was evaluated as ('' != '' AND 'true' != 'true').
    1:2>Done building target "QtWorkPrepare" in project "sample-framework.vcxproj".
@@ -791,20 +715,6 @@
        Done executing task "WriteLinesToFile".
        Task "WriteLinesToFile"
        Done executing task "WriteLinesToFile".
-       Task "WriteLinesToFile"
-       Done executing task "WriteLinesToFile".
-       Task "WriteLinesToFile"
-       Done executing task "WriteLinesToFile".
-       Task "Error" skipped, due to false condition; ('%(QtWorkResult.ExitCode)' != ''
-               AND '%(QtWorkResult.ExitCode)' != '0'
-               AND '$(DesignTimeBuild)' != 'true') was evaluated as ('0' != ''
-               AND '0' != '0'
-               AND '' != 'true').
-       Task "Error" skipped, due to false condition; ('%(QtWorkResult.ExitCode)' != ''
-               AND '%(QtWorkResult.ExitCode)' != '0'
-               AND '$(DesignTimeBuild)' != 'true') was evaluated as ('0' != ''
-               AND '0' != '0'
-               AND '' != 'true').
        Task "Error" skipped, due to false condition; ('%(QtWorkResult.ExitCode)' != ''
                AND '%(QtWorkResult.ExitCode)' != '0'
                AND '$(DesignTimeBuild)' != 'true') was evaluated as ('0' != ''
@@ -842,14 +752,10 @@
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'BezierViewer.cpp' != 'BezierViewer.cpp' and 'debug\' == 'debug\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'BezierWindow.cpp' != 'BezierWindow.cpp' and 'debug\' == 'debug\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'gauss_legendre.c' != 'gauss_legendre.c' and 'debug\' == 'debug\').
-       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'MyViewer.cpp' != 'MyViewer.cpp' and 'debug\' == 'debug\').
-       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'MyWindow.cpp' != 'MyWindow.cpp' and 'debug\' == 'debug\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'main.cpp' != 'main.cpp' and 'debug\' == 'debug\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'qrc_sample-framework.cpp' != 'qrc_sample-framework.cpp' and 'debug\' == 'debug\').
-       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'moc_MyViewer.cpp' != 'moc_MyViewer.cpp' and 'debug\' == 'debug\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'moc_BezierViewer.cpp' != 'moc_BezierViewer.cpp' and 'debug\' == 'debug\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'moc_BezierWindow.cpp' != 'moc_BezierWindow.cpp' and 'debug\' == 'debug\').
-       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'moc_MyWindow.cpp' != 'moc_MyWindow.cpp' and 'debug\' == 'debug\').
    1:2>Done building target "WarnCompileDuplicatedFilename" in project "sample-framework.vcxproj".
    1:2>Target "FixupCLCompileOptions" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_ClCompile" depends on it):
    1:2>Done building target "FixupCLCompileOptions" in project "sample-framework.vcxproj".
@@ -870,7 +776,7 @@
    1:2>Done building target "SelectClCompile" in project "sample-framework.vcxproj".
        Target "QtMsBuildNotFound" skipped, due to false condition; (!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')) was evaluated as (!Exists('C:\work\QtMsBuild\qt.targets') or !Exists('C:\work\QtMsBuild\qt.props')).
        Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
-       Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('BezierCurve.cpp;BezierViewer.cpp;BezierWindow.cpp;GaussQuadrature\gauss_legendre.c;MyViewer.cpp;MyWindow.cpp;main.cpp;Debug\qrc_sample-framework.cpp;Debug\moc_MyViewer.cpp;Debug\moc_BezierViewer.cpp;Debug\moc_BezierWindow.cpp;Debug\moc_MyWindow.cpp' != '' and 'false' == 'True').
+       Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('BezierCurve.cpp;BezierViewer.cpp;BezierWindow.cpp;GaussQuadrature\gauss_legendre.c;main.cpp;Debug\qrc_sample-framework.cpp;Debug\moc_BezierViewer.cpp;Debug\moc_BezierWindow.cpp' != '' and 'false' == 'True').
    1:2>Target "ClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_ClCompile" depends on it):
        Task "Delete" skipped, due to false condition; ('%(ClCompile.DebugInformationFormat)' != '' and '%(ClCompile.DebugInformationFormat)' != 'None' and '%(ClCompile.DebugInformationFormat)' != 'OldStyle' and '%(ClCompile.ProgramDataBaseFileName)' != '' and !Exists(%(ClCompile.ProgramDataBaseFileName))) was evaluated as ('ProgramDatabase' != '' and 'ProgramDatabase' != 'None' and 'ProgramDatabase' != 'OldStyle' and 'debug\vc141.pdb' != '' and !Exists(debug\vc141.pdb)).
        Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '') was evaluated as ('NotUsing' == 'Create' and ''!='true' and '' == '').
@@ -880,45 +786,23 @@
        Task "CL"
          Using cached input dependency table built from:
          	D:\Egyetem\6.felev\Onlab\sample-framework-master\debug\sample-framework.tlog\CL.read.1.tlog
-         Outputs for D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERCURVE.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERVIEWER.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERWINDOW.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\MAIN.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\MYVIEWER.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\MYWINDOW.CPP:
+         Outputs for D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERCURVE.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERVIEWER.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERWINDOW.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\MAIN.CPP:
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERCURVE.OBJ
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERVIEWER.OBJ
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERWINDOW.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYVIEWER.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYWINDOW.OBJ
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MAIN.OBJ
-         BezierCurve.cpp will be compiled because D:\Egyetem\6.felev\Onlab\sample-framework-master\BezierCurve.cpp was modified at 2021. 05. 18. 19:56:15.
-         Outputs for D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERCURVE.CPP:
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERCURVE.OBJ
+         BezierViewer.cpp will be compiled because D:\Egyetem\6.felev\Onlab\sample-framework-master\BezierViewer.cpp was modified at 2021. 05. 27. 17:54:00.
+         Outputs for D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERVIEWER.CPP:
+         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERVIEWER.OBJ
          Write Tracking Logs:
          	debug\sample-framework.tlog\CL.write.1.tlog
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=2232
-         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /IDebug /I"D:\Egyetem\6.felev\Onlab\sample-framework-master\eigen-3.3.9" /I"D:\Egyetem\6.felev\Onlab\sample-framework-master\autodiff" /ID:\Egyetem\Work\Tobbi_Onlab\OpenMesh8.1_src\src /I"D:\Egyetem\Work\Tobbi_Onlab\libQGLViewer-2.7.2" /I.\GeneratedFiles\Debug /I.\GeneratedFiles /I. /I/usr/include/eigen3 /Idebug /I/include /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtOpenGL /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtWidgets /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtGui /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtANGLE /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtXml /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtCore /I/include /I"C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\mkspecs\win32-msvc" /IDebug /Zi /nologo /W3 /WX- /diagnostics:classic /MP /Od /D _USE_MATH_DEFINES /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_OPENGL_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_XML_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"debug\\" /Fd"debug\vc141.pdb" /Gd /TP /wd4577 /wd4467 /FC /errorReport:prompt -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 BezierCurve.cpp
+           VS_UNICODE_OUTPUT=2484
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe /c /IDebug /I"D:\Egyetem\6.felev\Onlab\sample-framework-master\eigen-3.3.9" /I"D:\Egyetem\6.felev\Onlab\sample-framework-master\autodiff" /ID:\Egyetem\Work\Tobbi_Onlab\OpenMesh8.1_src\src /I"D:\Egyetem\Work\Tobbi_Onlab\libQGLViewer-2.7.2" /I.\GeneratedFiles\Debug /I.\GeneratedFiles /I. /I/usr/include/eigen3 /Idebug /I/include /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtOpenGL /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtWidgets /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtGui /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtANGLE /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtXml /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtCore /I/include /I"C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\mkspecs\win32-msvc" /IDebug /Zi /nologo /W3 /WX- /diagnostics:classic /MP /Od /D _USE_MATH_DEFINES /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_OPENGL_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_XML_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"debug\\" /Fd"debug\vc141.pdb" /Gd /TP /wd4577 /wd4467 /FC /errorReport:prompt -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 BezierViewer.cpp
          Tracking command:
-         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\Egyetem\6.felev\Onlab\sample-framework-master\debug\sample-framework.tlog /r D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERCURVE.CPP /b MSBuildConsole_CancelEventf22e6afb11a743238fbdc3baec843b89  /c "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe"  /c /IDebug /I"D:\Egyetem\6.felev\Onlab\sample-framework-master\eigen-3.3.9" /I"D:\Egyetem\6.felev\Onlab\sample-framework-master\autodiff" /ID:\Egyetem\Work\Tobbi_Onlab\OpenMesh8.1_src\src /I"D:\Egyetem\Work\Tobbi_Onlab\libQGLViewer-2.7.2" /I.\GeneratedFiles\Debug /I.\GeneratedFiles /I. /I/usr/include/eigen3 /Idebug /I/include /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtOpenGL /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtWidgets /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtGui /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtANGLE /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtXml /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtCore /I/include /I"C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\mkspecs\win32-msvc" /IDebug /Zi /nologo /W3 /WX- /diagnostics:classic /MP /Od /D _USE_MATH_DEFINES /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_OPENGL_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_XML_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"debug\\" /Fd"debug\vc141.pdb" /Gd /TP /wd4577 /wd4467 /FC /errorReport:prompt -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 BezierCurve.cpp
-         BezierCurve.cpp
-   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(8): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(9): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(48): warning C4189: 'z': local variable is initialized but not referenced
-   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(134): warning C4244: 'argument': conversion from 'size_t' to 'double', possible loss of data
-   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(161): warning C4244: 'argument': conversion from 'size_t' to 'double', possible loss of data
-   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(197): warning C4244: 'initializing': conversion from 'Eigen::EigenBase<Derived>::Index' to 'int', possible loss of data
-                 with
-                 [
-                     Derived=Eigen::Matrix<autodiff::forward::dual,-1,1,0,-1,1>
-                 ]
-   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(208): warning C4018: '<': signed/unsigned mismatch
-   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(232): warning C4244: 'initializing': conversion from 'Eigen::EigenBase<Derived>::Index' to 'int', possible loss of data
-                 with
-                 [
-                     Derived=Eigen::Matrix<autodiff::forward::dual,-1,1,0,-1,1>
-                 ]
-   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(247): warning C4018: '<': signed/unsigned mismatch
-   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(342): warning C4244: 'argument': conversion from 'size_t' to 'double', possible loss of data
-   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(401): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(435): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(373): warning C4715: 'BezierCurve::getIndexOfContorlPoint': not all control paths return a value
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\Egyetem\6.felev\Onlab\sample-framework-master\debug\sample-framework.tlog /r D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\BEZIERVIEWER.CPP /b MSBuildConsole_CancelEvent6e9f19fed3c44211a66e861ef2718810  /c "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\CL.exe"  /c /IDebug /I"D:\Egyetem\6.felev\Onlab\sample-framework-master\eigen-3.3.9" /I"D:\Egyetem\6.felev\Onlab\sample-framework-master\autodiff" /ID:\Egyetem\Work\Tobbi_Onlab\OpenMesh8.1_src\src /I"D:\Egyetem\Work\Tobbi_Onlab\libQGLViewer-2.7.2" /I.\GeneratedFiles\Debug /I.\GeneratedFiles /I. /I/usr/include/eigen3 /Idebug /I/include /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtOpenGL /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtWidgets /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtGui /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtANGLE /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtXml /IC:\Qt\Qt5.12.10\5.12.10\msvc2017_64\include\QtCore /I/include /I"C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\mkspecs\win32-msvc" /IDebug /Zi /nologo /W3 /WX- /diagnostics:classic /MP /Od /D _USE_MATH_DEFINES /D _WINDOWS /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D UNICODE /D _UNICODE /D WIN32 /D _ENABLE_EXTENDED_ALIGNED_STORAGE /D WIN64 /D QT_OPENGL_LIB /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_XML_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++17 /Fo"debug\\" /Fd"debug\vc141.pdb" /Gd /TP /wd4577 /wd4467 /FC /errorReport:prompt -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 BezierViewer.cpp
+         BezierViewer.cpp
+   1:2>d:\egyetem\6.felev\onlab\sample-framework-master\bezierviewer.cpp(150): warning C4267: 'argument': conversion from 'size_t' to 'GLuint', possible loss of data
        Done executing task "CL".
        Task "CL"
          Read Tracking Logs:
@@ -930,17 +814,15 @@
        Task "CL"
          Using cached input dependency table built from:
          	D:\Egyetem\6.felev\Onlab\sample-framework-master\debug\sample-framework.tlog\CL.read.1.tlog
-         Outputs for D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERVIEWER.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERWINDOW.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYVIEWER.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYWINDOW.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\QRC_SAMPLE-FRAMEWORK.CPP:
+         Outputs for D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERVIEWER.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERWINDOW.CPP|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\QRC_SAMPLE-FRAMEWORK.CPP:
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\QRC_SAMPLE-FRAMEWORK.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYVIEWER.OBJ
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERVIEWER.OBJ
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERWINDOW.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYWINDOW.OBJ
          All outputs are up-to-date.
        Done executing task "CL".
    1:2>Done building target "ClCompile" in project "sample-framework.vcxproj".
        Target "RunSelectedFileNativeCodeAnalysis" skipped, due to false condition; ('$(RunCppAnalysis)'=='true' and '$(SelectedFiles)'!='') was evaluated as ('false'=='true' and ''!='').
-       Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('BezierCurve.cpp;BezierViewer.cpp;BezierWindow.cpp;GaussQuadrature\gauss_legendre.c;MyViewer.cpp;MyWindow.cpp;main.cpp;Debug\qrc_sample-framework.cpp;Debug\moc_MyViewer.cpp;Debug\moc_BezierViewer.cpp;Debug\moc_BezierWindow.cpp;Debug\moc_MyWindow.cpp' != '' and 'false' == 'True').
+       Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('BezierCurve.cpp;BezierViewer.cpp;BezierWindow.cpp;GaussQuadrature\gauss_legendre.c;main.cpp;Debug\qrc_sample-framework.cpp;Debug\moc_BezierViewer.cpp;Debug\moc_BezierWindow.cpp' != '' and 'false' == 'True').
    1:2>Target "AfterClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_ClCompile" depends on it):
    1:2>Done building target "AfterClCompile" in project "sample-framework.vcxproj".
    1:2>Target "_ClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets" from project "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (target "_BuildCompileAction" depends on it):
@@ -1060,11 +942,11 @@
          	debug\sample-framework.tlog\link.write.1.tlog
          Read Tracking Logs:
          	debug\sample-framework.tlog\link.read.1.tlog
-         Outputs for D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERCURVE.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\GAUSS_LEGENDRE.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MAIN.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\QRC_SAMPLE-FRAMEWORK.OBJ:
+         Outputs for D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERCURVE.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\GAUSS_LEGENDRE.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MAIN.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\QRC_SAMPLE-FRAMEWORK.OBJ:
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\SAMPLE-FRAMEWORK.EXE
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\SAMPLE-FRAMEWORK.ILK
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\SAMPLE-FRAMEWORK.PDB
-         Inputs for D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERCURVE.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\GAUSS_LEGENDRE.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MAIN.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\QRC_SAMPLE-FRAMEWORK.OBJ:
+         Inputs for D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERCURVE.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\GAUSS_LEGENDRE.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MAIN.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\QRC_SAMPLE-FRAMEWORK.OBJ:
          	D:\EGYETEM\WORK\TOBBI_ONLAB\OPENMESH8.1_X64_DLL\OPENMESH 8.1\LIB\OPENMESHCORED.LIB
          	D:\EGYETEM\WORK\TOBBI_ONLAB\LIBQGLVIEWER-2.7.2\QGLVIEWER\QGLVIEWERD2.LIB
          	D:\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X64\OPENGL32.LIB
@@ -1091,14 +973,10 @@
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERVIEWER.OBJ
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERWINDOW.OBJ
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\GAUSS_LEGENDRE.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYVIEWER.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYWINDOW.OBJ
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MAIN.OBJ
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\QRC_SAMPLE-FRAMEWORK.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYVIEWER.OBJ
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERVIEWER.OBJ
          	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERWINDOW.OBJ
-         	D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYWINDOW.OBJ
          	C:\WINDOWS\SYSTEM32\TZRES.DLL
          	C:\WINDOWS\GLOBALIZATION\SORTING\SORTDEFAULT.NLS
          	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\COMMUNITY\VC\TOOLS\MSVC\14.16.27023\LIB\X64\MSVCPRTD.LIB
@@ -1106,34 +984,29 @@
          	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\COMMUNITY\VC\TOOLS\MSVC\14.16.27023\LIB\X64\OLDNAMES.LIB
          	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\COMMUNITY\VC\TOOLS\MSVC\14.16.27023\LIB\X64\VCRUNTIMED.LIB
          	D:\WINDOWS KITS\10\LIB\10.0.18362.0\UCRT\X64\UCRTD.LIB
-         Source compilation required: input D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERCURVE.OBJ is newer than output D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\SAMPLE-FRAMEWORK.PDB.
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\COMMUNITY\VC\TOOLS\MSVC\14.16.27023\BIN\HOSTX86\X64\LINK.EXE
+         	D:\WINDOWS KITS\10\BIN\10.0.18362.0\X86\RC.EXE
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2017\COMMUNITY\VC\TOOLS\MSVC\14.16.27023\BIN\HOSTX86\X86\CVTRES.EXE
+         Source compilation required: input D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERVIEWER.OBJ is newer than output D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\SAMPLE-FRAMEWORK.EXE.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=2472
+           VS_UNICODE_OUTPUT=1440
          C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\sample-framework.exe" /NOLOGO /LIBPATH:"D:\Egyetem\Work\Tobbi_Onlab\libQGLViewer-2.7.2\QGLViewer" /LIBPATH:"D:\Egyetem\Work\Tobbi_Onlab\OpenMesh8.1_x64_dll\OpenMesh 8.1\lib" /LIBPATH:\usr\lib\OpenMesh /LIBPATH:C:\openssl\lib /LIBPATH:"C:\Utils\my_sql\mysql-5.6.11-winx64\lib" /LIBPATH:C:\Utils\postgresql\pgsql\lib /LIBPATH:C:\openssl\lib /LIBPATH:"C:\Utils\my_sql\mysql-5.6.11-winx64\lib" /LIBPATH:C:\Utils\postgresql\pgsql\lib OpenMeshCored.lib QGLViewerd2.lib opengl32.lib glu32.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5OpenGLd.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Widgetsd.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Guid.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Xmld.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Cored.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\qtmaind.lib shell32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\sample-framework.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" debug\BezierCurve.obj
          debug\BezierViewer.obj
          debug\BezierWindow.obj
          debug\gauss_legendre.obj
-         debug\MyViewer.obj
-         debug\MyWindow.obj
          debug\main.obj
          "debug\qrc_sample-framework.obj"
-         debug\moc_MyViewer.obj
          debug\moc_BezierViewer.obj
          debug\moc_BezierWindow.obj
-         debug\moc_MyWindow.obj
          Tracking command:
-         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\Egyetem\6.felev\Onlab\sample-framework-master\debug\sample-framework.tlog /r "D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERCURVE.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\GAUSS_LEGENDRE.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MAIN.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_MYWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MYWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\QRC_SAMPLE-FRAMEWORK.OBJ" /b MSBuildConsole_CancelEvent59782b1491c444d09d2e9df6fb281e7c  /c "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"debug\\sample-framework.exe" /NOLOGO /LIBPATH:"D:\Egyetem\Work\Tobbi_Onlab\libQGLViewer-2.7.2\QGLViewer" /LIBPATH:"D:\Egyetem\Work\Tobbi_Onlab\OpenMesh8.1_x64_dll\OpenMesh 8.1\lib" /LIBPATH:\usr\lib\OpenMesh /LIBPATH:C:\openssl\lib /LIBPATH:"C:\Utils\my_sql\mysql-5.6.11-winx64\lib" /LIBPATH:C:\Utils\postgresql\pgsql\lib /LIBPATH:C:\openssl\lib /LIBPATH:"C:\Utils\my_sql\mysql-5.6.11-winx64\lib" /LIBPATH:C:\Utils\postgresql\pgsql\lib OpenMeshCored.lib QGLViewerd2.lib opengl32.lib glu32.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5OpenGLd.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Widgetsd.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Guid.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Xmld.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Cored.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\qtmaind.lib shell32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\sample-framework.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" debug\BezierCurve.obj
+         C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i D:\Egyetem\6.felev\Onlab\sample-framework-master\debug\sample-framework.tlog /r "D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERCURVE.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\BEZIERWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\GAUSS_LEGENDRE.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MAIN.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERVIEWER.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\MOC_BEZIERWINDOW.OBJ|D:\EGYETEM\6.FELEV\ONLAB\SAMPLE-FRAMEWORK-MASTER\DEBUG\QRC_SAMPLE-FRAMEWORK.OBJ" /b MSBuildConsole_CancelEvent6a05bba79f1e45b5b6d72d4bd1cc0a25  /c "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64\link.exe"  /ERRORREPORT:PROMPT /OUT:"debug\\sample-framework.exe" /NOLOGO /LIBPATH:"D:\Egyetem\Work\Tobbi_Onlab\libQGLViewer-2.7.2\QGLViewer" /LIBPATH:"D:\Egyetem\Work\Tobbi_Onlab\OpenMesh8.1_x64_dll\OpenMesh 8.1\lib" /LIBPATH:\usr\lib\OpenMesh /LIBPATH:C:\openssl\lib /LIBPATH:"C:\Utils\my_sql\mysql-5.6.11-winx64\lib" /LIBPATH:C:\Utils\postgresql\pgsql\lib /LIBPATH:C:\openssl\lib /LIBPATH:"C:\Utils\my_sql\mysql-5.6.11-winx64\lib" /LIBPATH:C:\Utils\postgresql\pgsql\lib OpenMeshCored.lib QGLViewerd2.lib opengl32.lib glu32.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5OpenGLd.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Widgetsd.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Guid.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Xmld.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\Qt5Cored.lib C:\Qt\Qt5.12.10\5.12.10\msvc2017_64\lib\qtmaind.lib shell32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\sample-framework.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X64 "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" debug\BezierCurve.obj
          debug\BezierViewer.obj
          debug\BezierWindow.obj
          debug\gauss_legendre.obj
-         debug\MyViewer.obj
-         debug\MyWindow.obj
          debug\main.obj
          "debug\qrc_sample-framework.obj"
-         debug\moc_MyViewer.obj
          debug\moc_BezierViewer.obj
          debug\moc_BezierWindow.obj
-         debug\moc_MyWindow.obj
        Done executing task "Link".
        Task "Message"
          sample-framework.vcxproj -> D:\Egyetem\6.felev\Onlab\sample-framework-master\debug\sample-framework.exe
@@ -1341,21 +1214,9 @@ Build succeeded.
        "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (Build target) (1) ->
        "D:\Egyetem\6.felev\Onlab\sample-framework-master\sample-framework.vcxproj" (Build target) (1:2) ->
        (ClCompile target) -> 
-         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(8): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(9): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(48): warning C4189: 'z': local variable is initialized but not referenced
-         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(134): warning C4244: 'argument': conversion from 'size_t' to 'double', possible loss of data
-         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(161): warning C4244: 'argument': conversion from 'size_t' to 'double', possible loss of data
-         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(197): warning C4244: 'initializing': conversion from 'Eigen::EigenBase<Derived>::Index' to 'int', possible loss of data
-         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(208): warning C4018: '<': signed/unsigned mismatch
-         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(232): warning C4244: 'initializing': conversion from 'Eigen::EigenBase<Derived>::Index' to 'int', possible loss of data
-         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(247): warning C4018: '<': signed/unsigned mismatch
-         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(342): warning C4244: 'argument': conversion from 'size_t' to 'double', possible loss of data
-         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(401): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(435): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-         d:\egyetem\6.felev\onlab\sample-framework-master\beziercurve.cpp(373): warning C4715: 'BezierCurve::getIndexOfContorlPoint': not all control paths return a value
+         d:\egyetem\6.felev\onlab\sample-framework-master\bezierviewer.cpp(150): warning C4267: 'argument': conversion from 'size_t' to 'GLuint', possible loss of data
 
-    13 Warning(s)
+    1 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:02.33
+Time Elapsed 00:00:04.04

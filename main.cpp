@@ -1,7 +1,6 @@
 #include <QtWidgets/QApplication>
 
 #include "BezierWindow.h"
-#include "MyWindow.h"
 
 int main(int argc, char **argv) {
   QApplication app(argc, argv);
