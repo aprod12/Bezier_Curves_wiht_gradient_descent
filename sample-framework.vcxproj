@@ -98,7 +98,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>OpenMeshCored.lib;QGLViewerd2.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:\Egyetem\Work\Tobbi_Onlab\libQGLViewer-2.7.2\QGLViewer;D:\Egyetem\Work\Tobbi_Onlab\OpenMesh8.1_x64_dll\OpenMesh 8.1\lib;\usr\lib\OpenMesh;C:\openssl\lib;C:\Utils\my_sql\mysql-5.6.11-winx64\lib;C:\Utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Egyetem\Work\Qt\5.12.11\msvc2017\include;D:\Egyetem\Work\Tobbi_Onlab\libQGLViewer-2.7.2\QGLViewer;D:\Egyetem\Work\Tobbi_Onlab\OpenMesh8.1_x64_dll\OpenMesh 8.1\lib;\usr\lib\OpenMesh;C:\openssl\lib;C:\Utils\my_sql\mysql-5.6.11-winx64\lib;C:\Utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
       <DataExecutionPrevention>true</DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -195,10 +195,14 @@
     <ClCompile Include="BezierCurve.cpp" />
     <ClCompile Include="BezierViewer.cpp" />
     <ClCompile Include="BezierWindow.cpp" />
+    <ClCompile Include="DockWidget.cpp" />
     <ClCompile Include="GaussQuadrature\gauss_legendre.c" />
+    <ClCompile Include="IDrawable.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="DockWidget.h" />
+    <ClInclude Include="IDrawable.h" />
     <QtMoc Include="BezierViewer.h" />
     <QtMoc Include="BezierWindow.h" />
     <ClInclude Include="autodiff\autodiff\forward\eigen.hpp" />

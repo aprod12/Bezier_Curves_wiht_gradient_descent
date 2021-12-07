@@ -2,6 +2,7 @@
 
 
 #include "vector.hh"
+#include "IDrawable.h"
 #include <algorithm>
 #include "GaussQuadrature/gauss_legendre.h"
 #include <math.h> 
@@ -23,18 +24,61 @@ static double x256[128] = { 0.0061239123751895295011702,0.0183708184788136651179
 static double w256[128] = { 0.0122476716402897559040703,0.0122458343697479201424639,0.0122421601042728007697281,0.0122366493950401581092426,0.0122293030687102789041463,0.0122201222273039691917087,0.0122091082480372404075141,0.0121962627831147135181810,0.0121815877594817721740476,0.0121650853785355020613073,0.0121467581157944598155598,0.0121266087205273210347185,0.0121046402153404630977578,0.0120808558957245446559752,0.0120552593295601498143471,0.0120278543565825711612675,0.0119986450878058119345367,0.0119676359049058937290073,0.0119348314595635622558732,0.0119002366727664897542872,0.0118638567340710787319046,0.0118256971008239777711607,0.0117857634973434261816901,0.0117440619140605503053767,0.0117005986066207402881898,0.0116553800949452421212989,0.0116084131622531057220847,0.0115597048540436357726687,0.0115092624770394979585864,0.0114570935980906391523344,0.0114032060430391859648471,0.0113476078955454919416257,0.0112903074958755095083676,0.0112313134396496685726568,0.0111706345765534494627109,0.0111082800090098436304608,0.0110442590908139012635176,0.0109785814257295706379882,0.0109112568660490397007968,0.0108422955111147959952935,0.0107717077058046266366536,0.0106995040389797856030482,0.0106256953418965611339617,0.0105502926865814815175336,0.0104733073841704030035696,0.0103947509832117289971017,0.0103146352679340150682607,0.0102329722564782196569549,0.0101497741990948656546341,0.0100650535763063833094610,0.0099788230970349101247339,0.0098910956966958286026307,0.0098018845352573278254988,0.0097112029952662799642497,0.0096190646798407278571622,0.0095254834106292848118297,0.0094304732257377527473528,0.0093340483776232697124660,0.0092362233309563026873787,0.0091370127604508064020005,0.0090364315486628736802278,0.0089344947837582075484084,0.0088312177572487500253183,0.0087266159616988071403366,0.0086207050884010143053688,0.0085135010250224906938384,0.0084050198532215357561803,0.0082952778462352254251714,0.0081842914664382699356198,0.0080720773628734995009470,0.0079586523687543483536132,0.0078440334989397118668103,0.0077282379473815556311102,0.0076112830845456594616187,0.0074931864548058833585998,0.0073739657738123464375724,0.0072536389258339137838291,0.0071322239610753900716724,0.0070097390929698226212344,0.0068862026954463203467133,0.0067616333001737987809279,0.0066360495937810650445900,0.0065094704150536602678099,0.0063819147521078805703752,0.0062534017395424012720636,0.0061239506555679325423891,0.0059935809191153382211277,0.0058623120869226530606616,0.0057301638506014371773844,0.0055971560336829100775514,0.0054633085886443102775705,0.0053286415939159303170811,0.0051931752508692809303288,0.0050569298807868423875578,0.0049199259218138656695588,0.0047821839258926913729317,0.0046437245556800603139791,0.0045045685814478970686418,0.0043647368779680566815684,0.0042242504213815362723565,0.0040831302860526684085998,0.0039413976414088336277290,0.0037990737487662579981170,0.0036561799581425021693892,0.0035127377050563073309711,0.0033687685073155510120191,0.0032242939617941981570107,0.0030793357411993375832054,0.0029339155908297166460123,0.0027880553253277068805748,0.0026417768254274905641208,0.0024951020347037068508395,0.0023480529563273120170065,0.0022006516498399104996849,0.0020529202279661431745488,0.0019048808534997184044191,0.0017565557363307299936069,0.0016079671307493272424499,0.0014591373333107332010884,0.0013100886819025044578317,0.0011608435575677247239706,0.0010114243932084404526058,0.0008618537014200890378141,0.0007121541634733206669090,0.0005623489540314098028152,0.0004124632544261763284322,0.0002625349442964459062875,0.0001127890178222721755125 };
 
 
-struct BezierCurve
+enum OtimizationMode
 {
+	CURVATURE = 0,
+	ARCHLENGTH = 1,
+	TORSION = 2,
+	FIRSTDERIVATE = 3,
+	SECONDDERIVATE = 4,
+	THIRDDERIVATE = 5,
+	CURVEVARIANT = 6,
+	FITTING = 7,
+	FITTINGNORMA = 8
+};
+
+
+class BezierCurve : public IDrawable
+{
+private:
 	size_t n;
 	PointVector cp;
 	std::vector<int> coefficients;
-	PointVector derivatedCp;
-	PointVector secondDerivatedCp;
+	OtimizationMode optimizationMode;
+	bool lineSearch;
+	double gradientDescendStepSize;
 
+	static inline double scaleNumberForFitting;
+
+	static inline double* numericalWeights = w128;
+	static inline double* numericalFunctionValues = x128;
+	static inline size_t sizeOfNumericalArrays = 64;
+
+public:
+	size_t iterationCount;
+	static inline PointVector referencePoints;
+	static inline std::vector<int> s_LockedControlPointIndexes;
+	std::vector<int> lockedControlPointIndexes;
+	static bool isStaticLocked(int index);
+	bool isItLocked(int index);
+	void lockControlPoint(int index);
+	void unlockControlPoint(int index);
+	void setQuadratureDegree(int n);
+	size_t getDegree();
+	void setDegree(size_t _n);
+	void setControlPoints(PointVector&& _cp);
+	PointVector& getControlpoints();
+	void setMode(int mode);
+	void setLineSearch(bool ls);
+	void setGradientDescendStepSize(double newSize);
+	double getGradientDescendStepSize();
+
+	BezierCurve();
+	BezierCurve(size_t _n);
+	BezierCurve(bool forStatic);
 
 	void regenerateControlPoints();
 	Point randomPoint(double fMin, double  fMax);
-
 	double bernstein(size_t i, size_t n, double u) const;
 	Point evaluateOneByOne(double u) const;
 	void bernsteinAll(size_t n, double u, DoubleVector & coeff) const;
@@ -44,30 +88,81 @@ struct BezierCurve
 	void derivativeControlPoints(size_t d, PointMatrix & dcp) const;
 	void bernsteinAll(size_t n, double u, DoubleMatrix & coeff) const;
 	void getFristDerivateControlPoints(PointVector& derivateCp);
-	Point getFirstDerivatedValue(double u);
 	size_t getIndexOfContorlPoint(Point p);
 	Point derivativesByControlPoints(double u, size_t d, VectorVector & der) const;
 	double arcLengthByFractions() const;
-	double arcLengthByNumericalIntegral();
 	double vectorLength(Vector v) const;
 	Point crossProduct(Point p1, Point p2);
-	void getSecondDerivateControlPoints(PointVector& secondDerivateCp);
-	Point getSecondDerivatedValue(double u);
-	double curvature(double u);
-	double sumCurvature();
 	VectorVector getGradientVector();
 	void gradientDescend();
-	static autodiff::dual energyFunction(const autodiff::VectorXdual & x,
+	static autodiff::dual curveEnergyFunction(const autodiff::VectorXdual & x,
 		const autodiff::VectorXdual& p);
-	static double curveIntegralBaseFunction(double u, void* data);
-	static double derivatedValueLength(double x, void* data);
+
+	autodiff::VectorXdual evaluateAutodiff(const autodiff::VectorXdual & x,
+		const autodiff::VectorXdual& p, double u);
 	autodiff::VectorXdual firstDerivate(const autodiff::VectorXdual & x,
 		const autodiff::VectorXdual& p, double u);
-	autodiff::VectorXdual secondDerivate(const autodiff::VectorXdual & x, 
+
+	autodiff::VectorXdual secondDerivate(const autodiff::VectorXdual & x,
 		const autodiff::VectorXdual& p, double u);
+
 	autodiff::VectorXdual crossProduct(const autodiff::VectorXdual& p1,
 		const autodiff::VectorXdual& p2);
 	autodiff::dual vectorLength(const autodiff::VectorXdual& v) const;
-	autodiff::dual curvatureAutodiff(const autodiff::VectorXdual & x, 
+
+	autodiff::dual curvatureAutodiff(const autodiff::VectorXdual & x,
 		const autodiff::VectorXdual& p, double u);
+	static autodiff::dual arcLengthEnergyFunction(const autodiff::VectorXdual & x,
+		const autodiff::VectorXdual& p);
+	autodiff::VectorXdual thirdDerivate(const autodiff::VectorXdual & x,
+		const autodiff::VectorXdual& p, double u);
+
+	autodiff::dual torsionAutodiff(const autodiff::VectorXdual & x,
+		const autodiff::VectorXdual& p, double u);
+	static autodiff::dual torsionEnergyFunction(const autodiff::VectorXdual & x,
+		const autodiff::VectorXdual& p);
+	autodiff::dual dotProduct(const autodiff::VectorXdual& v1,
+		const autodiff::VectorXdual& v2) const;
+	static autodiff::dual firstDerivateEnergyFunction(const autodiff::VectorXdual & x,
+		const autodiff::VectorXdual& p);
+	static autodiff::dual secondDerivateEnergyFunction(const autodiff::VectorXdual & x,
+		const autodiff::VectorXdual& p);
+	static autodiff::dual thirdDerivateEnergyFunction(const autodiff::VectorXdual & x,
+		const autodiff::VectorXdual& p);
+	autodiff::dual curveVariantAutodiff(const autodiff::VectorXdual & x,
+		const autodiff::VectorXdual& p, double u);
+	static autodiff::dual curveVariantEnergyFunction(const autodiff::VectorXdual & x,
+		const autodiff::VectorXdual& p);
+	autodiff::VectorXdual scalarProduct(const autodiff::dual& scalar,
+		const autodiff::VectorXdual& vec) const;
+	autodiff::VectorXdual subtraction(const autodiff::VectorXdual& vec1,
+		const autodiff::VectorXdual& vec2) const;
+	void controlPointsToAutodiffArguments(autodiff::VectorXdual& x,
+		autodiff::VectorXdual& p);
+	autodiff::VectorXdual division(const autodiff::VectorXdual& v, const autodiff::dual& u);
+
+	void increaseDegree();
+
+	autodiff::VectorXdual getNormalVector(double u);
+	PointVector genereateRandomReferencePoints(const double scale) const;
+	autodiff::dual getCurveSize(double u);
+	PointVector fittingPoints(double scale);
+	auto optimizationChoosing();
+	void getInformations(double& curvatureSumary, double& fractionLength,
+		double& archIntegral, double& error, double& torsion, double& firstDerivateEnergy,
+		double& secondDerivateEnergy, double& thirdDerivateEnergy,
+		double& curvatureVariant);
+	double getFittingEnergy();
+
+
+	//FITTING CURVE
+	void makeFittingCurve();
+	static autodiff::dual fittingEnergyFunction(const autodiff::VectorXdual & x,
+		const autodiff::VectorXdual& p);
+	static autodiff::VectorXdual getReferencePoint(double index);
+	static autodiff::dual fittingNormaEnergyFunction(const autodiff::VectorXdual & x,
+		const autodiff::VectorXdual & p);
+	static autodiff::dual combiningEnergyFunction(const autodiff::VectorXdual & x,
+		const autodiff::VectorXdual & p);
+
 };

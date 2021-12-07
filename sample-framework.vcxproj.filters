@@ -52,12 +52,21 @@
     <ClCompile Include="GaussQuadrature\gauss_legendre.c">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="IDrawable.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DockWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="BezierViewer.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="BezierWindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="DockWidget.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -92,6 +101,9 @@
     </ClInclude>
     <ClInclude Include="autodiff\autodiff\forward\forward.hpp">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IDrawable.h">
+      <Filter>Generated Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
